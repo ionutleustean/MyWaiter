@@ -1,11 +1,5 @@
 // http://ionicframework.com/docs/v2/theming/
 
-// Ionic Shared Functions
-// --------------------------------------------------
-// Makes Ionic Sass functions available to your App
-
-@import 'globals.core';
-
 // App Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
@@ -14,7 +8,6 @@
 // Ionic's default Sass variable values. App Shared Sass imports belong
 // in the app.core.scss file and not this file. Sass variables specific
 // to the mode belong in either the app.ios.scss or app.md.scss files.
-
 
 // App Shared Color Variables
 // --------------------------------------------------
@@ -26,10 +19,17 @@
 // are different per mode.
 
 $colors: (
-  primary:    #387ef5,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222,
-  favorite:   #69BB7B
+        primary: #c0392b,
+        secondary: #e74c3c,
+        danger: #f53d3d,
+        light: #f4f4f4,
+        dark: #222,
+        favorite: #69BB7B,
+        white: #ffffff,
+);
+
+$dimension: (
+        small: 10px,
+        medium: 15px,
+        lerge: 25px,
 );

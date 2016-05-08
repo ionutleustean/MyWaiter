@@ -1,6 +1,6 @@
-//@import "../../app.variables";
+@import "../../theme/app.variables";
 .homePage {
-  //background: map-get($colors, dark);
+  background: map-get($colors, dark);
   position: relative;
 
   &:before{
@@ -26,10 +26,8 @@
 
 
 
-
-
   .logo {
-    //color: map-get($colors, white);
+    color: map-get($colors, white);
     text-align: center;
 
      .icon {
@@ -38,8 +36,6 @@
       padding: 0px;
       width: 100px;
       height: 100px;
-      //margin-left: auto;
-      //margin-right: auto;
     }
      h2 {
       font-weight: 400;
@@ -51,7 +47,7 @@
     margin-top: 50px;
 
     button{
-      //margin-top: map-get($dimension, small);
+      margin-top: map-get($dimension, small);
     }
 
   }
