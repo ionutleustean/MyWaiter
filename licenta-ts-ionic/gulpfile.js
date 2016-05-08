@@ -2,7 +2,8 @@ var gulp = require('gulp'),
   gulpWatch = require('gulp-watch'),
   del = require('del'),
   runSequence = require('run-sequence'),
-  argv = process.argv;
+  argv = process.argv,
+  sass = require('gulp-sass');
 
 
 /**
@@ -37,7 +38,7 @@ var isRelease = argv.indexOf('--release') > -1;
 
 gulp.task('watch', ['clean'], function (done) {
   runSequence(
-    ['sass', 'index', 'html', 'fonts', 'scripts'],
+    ['common-sass', 'angular-sass', 'images', 'index', 'html', 'fonts', 'scripts'],
     function () {
       gulpWatch('app/**/*.scss', function () {
         gulp.start('sass');
@@ -52,7 +53,7 @@ gulp.task('watch', ['clean'], function (done) {
 
 gulp.task('build', ['clean'], function (done) {
   runSequence(
-    ['sass', 'index', 'html', 'fonts', 'scripts'],
+    ['common-sass', 'angular-sass', 'images', 'index', 'html', 'fonts', 'scripts'],
     function () {
       buildBrowserify({
         minify: isRelease,
@@ -67,13 +68,27 @@ gulp.task('build', ['clean'], function (done) {
   );
 });
 
-gulp.task('sass', buildSass);
+gulp.task('common-sass', buildSass);
+
+gulp.task('images', function () {
+  return gulp.src(['app/img/**/*'])
+    .pipe(gulp.dest('www/img'));
+});
+
+gulp.task('angular-sass', function () {
+  return gulp.src('app/pages/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./www/build/pages'));
+});
+
+
 gulp.task('index', function () {
   return copyHTML({
     src: 'index.html',
     dest: 'www'
   });
 });
+
 gulp.task('html', copyHTML);
 gulp.task('fonts', copyFonts);
 gulp.task('scripts', copyScripts);
