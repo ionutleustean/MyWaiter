@@ -1,7 +1,7 @@
 import {Page, NavController, Platform} from 'ionic-angular';
 import {BarcodeScanner} from 'ionic-native';
 import {LogIn} from '../user/logIn/logIn';
-// import {Restaurants} from '../order/restaurants/restaurants';
+import {Restaurants} from '../order/restaurants/restaurants';
 // import {Menu} from '../order/menu/menu';
 
 
@@ -48,9 +48,9 @@ export class HomePage {
 // }
 
 
-    // goToRestaurants() {
-    //     this.nav.push(Restaurants);
-    // }
+    goToRestaurants() {
+        this.nav.push(Restaurants);
+    }
 
 
     goToLogIn() {
