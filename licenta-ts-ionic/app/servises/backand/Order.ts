@@ -28,6 +28,18 @@ export class Order {
     }
 
 
+    public getTables() {
+
+        this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
+
+        return this.http.get(ConfigBackand.api_url + '1/objects/Tables', {
+            headers: this.header
+        })
+            .retry(3)
+            .map(res => res.json().data.map(r => r))
+    }
+
+
     logError(err) {
         console.error('Error: ' + err);
     }

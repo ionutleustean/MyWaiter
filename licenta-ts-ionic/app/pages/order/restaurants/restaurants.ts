@@ -1,5 +1,5 @@
 import {Page, NavController} from 'ionic-angular';
-// import {Tables} from '../tables/tables'
+import {Tables} from '../tables/tables'
 import {RestaurantModel} from '../../../model/RestaurantModel'
 import {Order} from '../../../servises/backand/Order';
 
@@ -15,7 +15,9 @@ export class Restaurants {
 
     public restaurants:any;
 
-    constructor(nav:NavController, private order:Order) {
+
+
+    constructor(private nav:NavController, private order:Order) {
 
         this.restaurants = [];
 
@@ -37,15 +39,15 @@ export class Restaurants {
     }
 
     updateImgSrc(index) {
-        console.log(this.restaurants[index]);
         this.restaurants[index].Image = "http://www.restaurantginger.ro/images/416_1zinc.jpg";
     }
 
-    // goToTables(restaurantId){
-    //   this.nav.push(Tables, {
-    //     restaurantId: restaurantId,
-    //   });
-    // }
+    goToTables(restaurantId){
+      this.nav.push(Tables, {
+        restaurantId: restaurantId,
+      });
+    }
 
 
+    logError(err){}
 }

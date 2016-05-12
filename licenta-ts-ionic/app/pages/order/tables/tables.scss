@@ -1,0 +1,43 @@
+@import "../../../theme/app.variables";
+
+.tables {
+  height: 100%;
+  color: map-get($colors, white);
+
+  scroll-content {
+    padding: 0px;
+  }
+
+
+
+    .tables_col {
+      height: 25%;
+      float: left;
+      border-top: 1px;
+      border-left: 0px;
+      border-bottom: 0px;
+      border-right: 1px;
+      border-style: solid;
+      border-color: map-get($colors, white);
+      position: relative;
+
+      .table_header {
+        font-size: 15vh;
+        line-height: 15vh;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+      }
+      .table_content{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        padding: map-get($dimension, small);
+
+      }
+
+
+  }
+}
+
+
