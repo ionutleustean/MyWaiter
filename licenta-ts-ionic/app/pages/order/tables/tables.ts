@@ -23,18 +23,19 @@ export class Tables {
 
         this.tables = [];
 
-        this.getTables();
+        this.getTables(this.restaurantId);
     }
 
-    getTables() {
+    getTables(restaurantId) {
+        console.log(restaurantId);
 
 
         let color = ["#673bb7", "#dc4437", "#fe5722", "#e67e22", "#4385f5", "#009788"];
 
-        this.order.getTables()
+        this.order.getTables(restaurantId)
             .subscribe(data => {
                     this.tables = data;
-
+console.log(data);
                     for (let i = 0; i < data.length; i++) {
                         this.tables[i].color = color[Math.floor(Math.random() * color.length)];
                     }

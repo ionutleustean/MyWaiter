@@ -5,13 +5,13 @@
 <ion-content padding class="tables">
 
 
-        <ion-col width-50 *ngFor="#item of tables #i = index" class="tables_col"  [style.background]="item.color" (click)="goToMenu(item.tableNumber)">
+        <ion-col width-50 *ngFor="#item of tables #i = index" class="tables_col"  [style.background]="item.color" (click)="goToMenu(item.TableNumber)">
             <div class="table_header">
-                {{item.tableNumber}}
+                {{item.TableNumber}}
             </div>
 
             <div class="table_content">
-                Locuri disponibile: {{item.seats}}
+                Locuri disponibile: {{item.Seats}}
 
             </div>
 
