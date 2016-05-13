@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "name": "dashboard",
+  "launch_path": "/index.html",
+  "description": "null",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "Ionut Leustean",
+    "url": "null"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "dashboard",
+      "description": "null"
+    }
+  }
+}
