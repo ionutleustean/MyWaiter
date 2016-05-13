@@ -33,10 +33,31 @@ export class Order {
         if (restaurantId != null || restaurantId != "")
         {
             let filter = JSON.stringify([{"fieldName": "RestaurantId", "operator": "equals", "value": restaurantId}]);
-            
+
             this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
 
             return this.http.get(ConfigBackand.api_url + '1/objects/Tables?filter=' + encodeURI(filter), {
+                headers: this.header
+            })
+                .retry(3)
+                .map(res => res.json().data.map(r => r))
+        }
+        else {
+
+        }
+    }
+
+    public getMenu(restaurantId) {
+
+        if (restaurantId != null || restaurantId != "")
+        {
+            let filter = JSON.stringify([
+                {"fieldName": "Restaurant", "operator": "equals", "value": restaurantId},
+            ]);
+
+            this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
+
+            return this.http.get(ConfigBackand.api_url + '1/objects/Product?filter=' + encodeURI(filter), {
                 headers: this.header
             })
                 .retry(3)

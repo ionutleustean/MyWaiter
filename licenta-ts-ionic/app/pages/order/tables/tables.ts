@@ -1,5 +1,5 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-// import {Menu} from '../menu/menu'
+import {Menu} from '../menu/menu'
 import {Order} from '../../../servises/backand/Order';
 
 
@@ -27,15 +27,12 @@ export class Tables {
     }
 
     getTables(restaurantId) {
-        console.log(restaurantId);
-
 
         let color = ["#673bb7", "#dc4437", "#fe5722", "#e67e22", "#4385f5", "#009788"];
 
         this.order.getTables(restaurantId)
             .subscribe(data => {
                     this.tables = data;
-console.log(data);
                     for (let i = 0; i < data.length; i++) {
                         this.tables[i].color = color[Math.floor(Math.random() * color.length)];
                     }
@@ -45,12 +42,12 @@ console.log(data);
             );
     }
 
-    // goToMenu( tableNr ){
-    //   this.nav.push(Menu, {
-    //     restaurantId: this.restaurantId,
-    //     tableNr: tableNr,
-    //   });
-    // }
+    goToMenu( tableNr ){
+      this.nav.push(Menu, {
+        restaurantId: this.restaurantId,
+        tableNr: tableNr,
+      });
+    }
     logError(err){}
 
 

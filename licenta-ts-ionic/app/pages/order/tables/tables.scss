@@ -1,14 +1,7 @@
 @import "../../../theme/app.variables";
 
 .tables {
-  height: 100%;
   color: map-get($colors, white);
-
-  scroll-content {
-    padding: 0px;
-  }
-
-
 
     .tables_col {
       height: 25%;
