@@ -1,1 +1,38 @@
-Login template
+ <div class="container">
+
+        <md-content>
+            
+            <H1 class="md-title"> Login </H1>
+
+
+            <form name="loinForm" class="login-form">
+
+
+                <section layout="row" layout-align="center center">
+                    <md-input-container class="md-block" layout-fill>
+                        <label>First name</label>
+                        <input md-input [(value)]="user.firstName">
+                    </md-input-container>
+                </section>
+                
+                <section layout="row" layout-align="center center">
+                    <md-input-container class="md-block" layout-fill>
+                        <label>Last Name</label>
+                        <input md-input [(value)]="user.lastName">
+                    </md-input-container>
+                </section>
+
+                <section layout="row" layout-align="center center">
+                    <button md-raised-button class="md-raised md-primary" layout-fill>Login</button>
+                </section>
+                
+                <section layout="row" layout-align="center center">
+                    <button md-raised-button class="md-raised" layout-fill>Register</button>
+                </section>
+
+
+            </form>
+
+        </md-content>
+
+    </div>

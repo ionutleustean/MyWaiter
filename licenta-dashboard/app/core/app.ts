@@ -15,17 +15,17 @@ import {Login} from "../pages/user/login/login";
 //import {appServicesInjectables} from "core/services/services";
 
 @Component({
-	selector: "app",
-	templateUrl: "core/app.template.html", //template: "<router-outlet></router-outlet>",
-	directives: [RouterOutlet, RouterLink]
+    selector: "app",
+    templateUrl: "core/app.template.html", //template: "<router-outlet></router-outlet>",
+    directives: [RouterOutlet, RouterLink]
 })
 @RouteConfig([
-	{ path: "/", component: Home, as: "Home", data: undefined }, // the as serves as alias for links, etc
-	{ path: "/login", component: Login, as: "Login", data: undefined } 
+    {path: "/", component: Home, as: "Home", data: undefined}, // the as serves as alias for links, etc
+    {path: "/login", component: Login, as: "Login", data: undefined}
 ])
 export class App {
-	constructor() {
-		console.log("Application bootstrapped!");
-	}
+    constructor() {
+        console.log("Application bootstrapped!");
+    }
 }
 
