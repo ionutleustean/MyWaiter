@@ -1,38 +1,38 @@
- <div class="container">
+<div class="container">
 
-        <md-content>
+    <md-content>
+
+        <H1 class="md-title"> Login </H1>
+
+
+        <form name="loinForm" class="login-form">
+
+
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <label>Email</label>
+                    <input md-input type="email" [(value)]="user.email">
+                </md-input-container>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <label>Password</label>
+                    <input md-input type="password" [(value)]="user.password">
+                </md-input-container>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <button md-raised-button class="md-raised" layout-fill [routerLink]="['/Register']">Register</button>
+                <button md-raised-button class="md-raised md-primary" layout-fill>Login</button>
+            </section>
             
-            <H1 class="md-title"> Login </H1>
+            <section layout="row" layout-align="end end">
+                <button md-button class="md-primary">Reset Password</button>
+            </section>
 
+        </form>
 
-            <form name="loinForm" class="login-form">
+    </md-content>
 
-
-                <section layout="row" layout-align="center center">
-                    <md-input-container class="md-block" layout-fill>
-                        <label>First name</label>
-                        <input md-input [(value)]="user.firstName">
-                    </md-input-container>
-                </section>
-                
-                <section layout="row" layout-align="center center">
-                    <md-input-container class="md-block" layout-fill>
-                        <label>Last Name</label>
-                        <input md-input [(value)]="user.lastName">
-                    </md-input-container>
-                </section>
-
-                <section layout="row" layout-align="center center">
-                    <button md-raised-button class="md-raised md-primary" layout-fill>Login</button>
-                </section>
-                
-                <section layout="row" layout-align="center center">
-                    <button md-raised-button class="md-raised" layout-fill>Register</button>
-                </section>
-
-
-            </form>
-
-        </md-content>
-
-    </div>
+</div>

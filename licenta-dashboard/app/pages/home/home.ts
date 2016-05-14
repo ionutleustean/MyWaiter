@@ -14,7 +14,7 @@ export class Home {
 
 	constructor(private router: Router) {
 		console.log("Home component loaded");
-        this.router.navigate(["Login"]);
+        this.router.navigate(["/Login"]);
 
     }
 }
