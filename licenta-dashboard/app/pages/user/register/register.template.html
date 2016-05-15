@@ -10,7 +10,7 @@
             <section layout="row" layout-align="center center">
                 <md-input-container class="md-block" layout-fill>
                     <label>Email</label>
-                    <input md-input [(value)]="user.email">
+                    <input type="email" md-input [(value)]="user.email">
                 </md-input-container>
             </section>
 
@@ -37,8 +37,8 @@
             
             <section layout="row" layout-align="center center">
                 <md-input-container class="md-block" layout-fill>
-                    <label>password confirmation</label>
-                    <input type="password" md-input [(value)]="user.passwordConf">
+                    <label>Password Confirmation</label>
+                    <input type="password" md-input [(value)]="user.confirmPassword">
                 </md-input-container>
             </section> 
             
@@ -46,7 +46,7 @@
 
             <section layout="row" layout-align="center center">
                 <button md-raised-button class="md-raised" layout-fill [routerLink]="['/Login']" >Login</button>
-                <button md-raised-button class="md-raised md-primary" layout-fill>Register</button>
+                <button md-raised-button class="md-raised md-primary" layout-fill (click)="submitRegister()">Register</button>
             </section>
 
 

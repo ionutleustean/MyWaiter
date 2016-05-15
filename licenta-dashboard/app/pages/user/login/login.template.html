@@ -11,7 +11,7 @@
             <section layout="row" layout-align="center center">
                 <md-input-container class="md-block" layout-fill>
                     <label>Email</label>
-                    <input md-input type="email" [(value)]="user.email">
+                    <input md-input type="email" [(value)]="user.username">
                 </md-input-container>
             </section>
 
@@ -24,11 +24,11 @@
 
             <section layout="row" layout-align="center center">
                 <button md-raised-button class="md-raised" layout-fill [routerLink]="['/Register']">Register</button>
-                <button md-raised-button class="md-raised md-primary" layout-fill>Login</button>
+                <button md-raised-button class="md-raised md-primary" layout-fill (click)="submitLogin()">Login</button>
             </section>
             
             <section layout="row" layout-align="end end">
-                <button md-button class="md-primary">Reset Password</button>
+                <button md-button class="md-primary" (click)="requestResetPassword()">Reset Password</button>
             </section>
 
         </form>

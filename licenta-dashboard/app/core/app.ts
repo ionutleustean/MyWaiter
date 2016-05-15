@@ -11,6 +11,7 @@ import {RouteConfig, Route, RouterOutlet, RouterLink, Router} from "angular2/rou
 import {Home} from "../pages/home/home";
 import {Login} from "../pages/user/login/login";
 import {Register} from "../pages/user/register/register";
+import {ResetPassword} from "../pages/user/reset-password/reset-password";
 
 // app services
 //import {appServicesInjectables} from "core/services/services";
@@ -23,7 +24,8 @@ import {Register} from "../pages/user/register/register";
 @RouteConfig([
     {path: "/", component: Home, as: "Home", data: undefined}, // the as serves as alias for links, etc
     {path: "/login", component: Login, as: "Login", data: undefined},
-    {path: "/register", component: Register, as: "Register", data: undefined}
+    {path: "/register", component: Register, as: "Register", data: undefined},
+    {path: "/reset-password", component: ResetPassword, as: "ResetPassword", data: undefined}
 ])
 export class App {
     constructor() {
