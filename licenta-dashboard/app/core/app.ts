@@ -22,10 +22,10 @@ import {ResetPassword} from "../pages/user/reset-password/reset-password";
     directives: [RouterOutlet, RouterLink]
 })
 @RouteConfig([
-    {path: "/", component: Home, as: "Home", data: undefined}, // the as serves as alias for links, etc
+    {path: "/...", component: Home, as: "Home", data: undefined}, // the as serves as alias for links, etc
     {path: "/login", component: Login, as: "Login", data: undefined},
     {path: "/register", component: Register, as: "Register", data: undefined},
-    {path: "/reset-password", component: ResetPassword, as: "ResetPassword", data: undefined}
+    {path: "/reset-password", component: ResetPassword, as: "ResetPassword", data: undefined},
 ])
 export class App {
     constructor() {

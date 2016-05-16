@@ -1,8 +1,20 @@
-Welcome home!
+<md-content>
+
+    <md-toolbar class="">
+        <span flex></span>
+        <h2 class="md-toolbar-tools md-toolbar-tools-bottom">
+            <span class="md-flex">Dashboard</span>
+        </h2>
+    </md-toolbar>
 
 
-dsafas
-dfasd
-f
-asdf
-as
+    <!--<a [routerLink]="['./user-settings']">About Home</a>-->
+    <div class="inner-outlet">
+        <router-outlet></router-outlet>
+    </div>
+
+</md-content>
+
+
+<!--<button md-raised-button class="md-raised md-primary" layout-fill [routerLink]="['./Home',['UserSettings']]" >UserSettings</button>-->
+
