@@ -4,20 +4,27 @@
 import {Component} from "angular2/core";
 import {RouteConfig, Route, RouterOutlet, RouterLink, Router} from "angular2/router";
 import {MATERIAL_DIRECTIVES, SidenavService} from "../../../node_modules/ng2-material/all";
+import {FORM_DIRECTIVES} from "angular2/common";
 
 
 import {UserSettings} from "../user/settings/settings";
+import {Dashboard} from "../dashboard/dashboard";
+import {Products} from "../products/products";
+import {Tables} from "../tables/tables";
 
 
 @Component({
 	selector: "page-home",
 	templateUrl: "pages/home/home.template.html",
-    providers: [SidenavService, MATERIAL_DIRECTIVES],
+    providers: [SidenavService, FORM_DIRECTIVES, MATERIAL_DIRECTIVES],
     directives: [RouterLink, RouterOutlet]
 })
 
 @RouteConfig([
-    {path: "/", component: UserSettings, as: "UserSettings", data: undefined}, // the as serves as alias for links, etc
+    {path: "/", component: Tables, as: "Tables", data: undefined}, // the as serves as alias for links, etc
+    {path: "/products", component: Products, as: "Products", data: undefined},
+    {path: "/dashboard", component: Dashboard, as: "Dashboard", data: undefined}, 
+    {path: "/user-settings", component: UserSettings, as: "UserSettings", data: undefined}, 
 ])
 
 export class Home {

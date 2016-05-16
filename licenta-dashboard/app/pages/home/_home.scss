@@ -10,6 +10,27 @@ page-home {
         position: fixed;
         top: 0px;
         left: 0px;
+        color: #fff;
+        
+        md-content{
+            .menu-item{
+                margin: 0px;
+                padding: 7px 15px;
+                border-radius: 0px;
+                color: #fff;
+                text-align: left;
+                text-transform: none;
+                display: flex;
+                align-items: center;
+            }
+            
+            .glyphicon{
+                font-size: 20px;
+                //color: #aaaaaa;
+                padding-right: 15px;
+            }
+            
+        }
 
     }
     
