@@ -5,26 +5,12 @@
         <H1 class="md-title"> Register </H1>
 
 
-        <form name="registerForm" class="login-form">
+        <form name="registerForm" class="register-form">
 
             <section layout="row" layout-align="center center">
                 <md-input-container class="md-block" layout-fill>
                     <label>Email</label>
                     <input type="email" md-input [(value)]="user.email">
-                </md-input-container>
-            </section>
-
-            <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>First name</label>
-                    <input md-input [(value)]="user.firstName">
-                </md-input-container>
-            </section>
-
-            <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Last Name</label>
-                    <input md-input [(value)]="user.lastName">
                 </md-input-container>
             </section>
             
@@ -40,17 +26,62 @@
                     <label>Password Confirmation</label>
                     <input type="password" md-input [(value)]="user.confirmPassword">
                 </md-input-container>
-            </section> 
+            </section>
+
+
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <label>Restaurant name</label>
+                    <input md-input [(value)]="user.firstName">
+                </md-input-container>
+            </section>
             
-        
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <label>Address</label>
+                    <input md-input [(value)]="restaurant.Address">
+                </md-input-container>
+            </section>
+
+
+            <label class="custom-label">Short Description</label>
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <textarea rows="4" cols="50"  md-input [(ngModel)]="restaurant.Shortdescription">
+                    </textarea>
+                </md-input-container>
+            </section>
+
+            
+            
+            <label class="custom-label">Description</label>
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <textarea rows="4" cols="50" md-input [(ngModel)]="restaurant.Description">
+                    </textarea>
+                </md-input-container>
+            </section>
+
+
+            <label class="custom-label">Logo</label>
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <input type="file" md-input (change)="handleUpload($event)" >
+                </md-input-container>
+            </section>
+            
+            
 
             <section layout="row" layout-align="center center">
                 <button md-raised-button class="md-raised" layout-fill [routerLink]="['/Login']" >Login</button>
                 <button md-raised-button class="md-raised md-primary" layout-fill (click)="submitRegister()">Register</button>
             </section>
-
+            
 
         </form>
+
+        <img src="{{someExpression}}">
+
 
     </md-content>
 

@@ -45,18 +45,6 @@ export class UserService {
         var $obs = this.http.post(this.url + "signup", JSON.stringify(user), {
                 headers: this.header
             });
-
-        $obs.subscribe(
-            data => {
-                this.router.navigateByUrl("/login");
-            },
-            err => {
-                // console.log(err)
-            },
-            () => {
-                // console.log('Finish Auth')
-            });
-
         return $obs;
         
     }
