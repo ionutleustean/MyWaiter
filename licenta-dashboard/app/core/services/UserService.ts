@@ -1,6 +1,7 @@
 
 import 'rxjs/Rx';
 import {Http, Response, Headers, RequestOptions} from 'angular2/http';
+import {RouteConfig, Route, RouterOutlet, RouterLink, Router} from "angular2/router";
 import {Injectable} from 'angular2/core';
 import {ConfigBackand} from '../vars/ConfigBackand';
 import {UserModel} from '../model/UserModel';
@@ -18,7 +19,8 @@ export class UserService {
     private auth_token:{ header_name:string, header_value:string} = {header_name: '', header_value: ''};
 
 
-    constructor(public http:Http) {
+    constructor(public http:Http, private router:Router) {
+        
 
     }
 
@@ -27,9 +29,16 @@ export class UserService {
     
     
 
+    public isLoggedin(){
+        
+        if( Cookie.getCookie("Authorization") && (Cookie.getCookie("user_role") === "Restaurant")){
+            return true;
+        }
+        this.router.navigateByUrl("/login");
+    }
+    
     public createUser(user:UserModel) {
         
-
         this.header.append('Content-Type', 'application/json');
         this.header.append('SignUpToken', ConfigBackand.signUpToken);
         
@@ -39,7 +48,7 @@ export class UserService {
 
         $obs.subscribe(
             data => {
-               // console.log(data)
+                this.router.navigateByUrl("/login");
             },
             err => {
                 // console.log(err)
@@ -65,14 +74,12 @@ export class UserService {
 
         var $obs = this.http.post("https://api.backand.com/" + "token", creds, {
             headers: header
-        })
-            .map(res => this.getToken(res));
-
+        });
 
         $obs.subscribe(
             data => {
-                this.setTokenHeader(data)
-                console.log(data);
+                this.setUserData(data);
+                this.router.navigateByUrl("/");
             },
             err => {
                 console.log(err);
@@ -85,7 +92,8 @@ export class UserService {
     }
     
     public logout() {
-        Cookie.deleteCookie(this.auth_token.header_name)
+        Cookie.deleteCookie("user_role")
+        Cookie.deleteCookie("Authorization")
     }
     
     public requestResetPassword(username) {
@@ -135,19 +143,17 @@ export class UserService {
         
     }
     
-
-    private getToken(res) {
-        // console.log(res);
-        return res.json().access_token;
-    }
-
-    private setTokenHeader(jwt) {
+    private setUserData(res) {
+        let data = res.json();
+        let jwt = data.access_token;
         if (jwt) {
             this.auth_token.header_name = "Authorization";
             this.auth_token.header_value = "Bearer " + jwt;
             //localStorage.setItem('jwt', jwt);
             
             Cookie.setCookie(this.auth_token.header_name, this.auth_token.header_value);
+            Cookie.setCookie("user_role", data.role);
+            
 
         }
     }

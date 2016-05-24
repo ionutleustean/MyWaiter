@@ -22,6 +22,33 @@ export class MyApp {
     constructor(platform:Platform) {
 
         this.rootPage = HomePage;
+        //
+        // if ('serviceWorker' in navigator) {
+        //     navigator.serviceWorker.register('/build/scripts/pushNotification.js').then(function(registration) {
+        //         // Registration was successful
+        //         console.log('ServiceWorker registration successful with scope: ',    registration.scope);
+        //     }).catch(function(err) {
+        //         // registration failed :(
+        //         console.log('ServiceWorker registration failed: ', err);
+        //     });
+        // }
+
+
+
+        if ('serviceWorker' in navigator) {
+            console.log('Service Worker is supported');
+            navigator.serviceWorker.register('/build/scripts/pushNotification.js').then(function(reg) {
+                console.log('reg)', reg);
+                reg.pushManager.subscribe({
+                    userVisibleOnly: true
+                }).then(function(sub) {
+                    console.log('endpoint:', sub.endpoint);
+                });
+            }).catch(function(error) {
+                console.log(':^(', error);
+            });
+        }
+
 
         platform.ready().then(() => {
             // Okay, so the platform is ready and our plugins are available.
