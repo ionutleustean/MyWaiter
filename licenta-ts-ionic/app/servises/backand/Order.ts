@@ -20,7 +20,7 @@ export class Order {
 
         this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
 
-        return this.http.get(ConfigBackand.api_url + '1/objects/Restaurant', {
+        return this.http.get(ConfigBackand.api_url + '1/objects/Restaurants', {
             headers: this.header
         })
             .retry(3)

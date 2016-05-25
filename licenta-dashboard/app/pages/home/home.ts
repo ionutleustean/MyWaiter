@@ -35,10 +35,14 @@ export class Home {
                 public sidenav:SidenavService,
                 public userService:UserService) {
 
+
+
         if (userService.isLoggedin()) {
             console.log(true);
         }
         else {
+
+
         }
 
     }

@@ -3,7 +3,7 @@
 import {Component} from "angular2/core";
 import {RouterLink, Router} from "angular2/router";
 import {FORM_DIRECTIVES} from "angular2/common";
-import { MATERIAL_DIRECTIVES} from "../../../../node_modules/ng2-material/all";
+import {MATERIAL_DIRECTIVES} from "../../../../node_modules/ng2-material/all";
 
 import {UserModel} from "../../../core/model/UserModel";
 import {RestaurantModel} from "../../../core/model/RestaurantModel";
@@ -18,44 +18,43 @@ import {OrderService} from "../../../core/services/OrderService";
 
 })
 export class Register {
-    
-    constructor(private router: Router, 
-                public user:UserModel, 
-                public restaurant:RestaurantModel, 
-                private userService:UserService, 
-                private orderService:OrderService
-    ) {
-        
+
+    constructor(private router:Router,
+                public user:UserModel,
+                public restaurant:RestaurantModel,
+                private userService:UserService,
+                private orderService:OrderService) {
+
         console.log("register component loaded");
-        
+
     }
 
 
     handleUpload(fileInput) {
-        
-        let file: FileList = fileInput.target.files;
+
+        let file:FileList = fileInput.target.files;
 
         var fileReader = new FileReader();
-         
+
         let self = this;
-            
-        fileReader.onload = function(fileLoadedEvent: FileReaderEvent) {
-            
+
+        fileReader.onload = function (fileLoadedEvent:FileReaderEvent) {
+
             let srcData = fileLoadedEvent.target.result;
-            
+
             self.restaurant.Image = srcData;
-            
+
         };
-        
-        
+
+
         fileReader.readAsDataURL(file[0]);
 
 
     }
-    
-    
-    submitRegister(){
-        
+
+
+    submitRegister() {
+
         this.restaurant.Name = this.user.firstName;
 
         console.log(this.restaurant);
@@ -63,23 +62,31 @@ export class Register {
 
         let $obsUser = this.userService.createUser(this.user);
 
-        $obsUser.subscribe( 
+        $obsUser.subscribe(
             data => {
 
-                this.orderService.createRestaurant(this.restaurant).subscribe(
+
+                this.userService.updateRole(this.user.email).subscribe(
                     data => {
-                        console.log(data)
+                        this.orderService.createRestaurant(this.restaurant).subscribe(
+                            data => {
+                                console.log(data)
+                                this.router.navigateByUrl("/login");
+                            },
+                            err => {
+                                console.log(err)
+                            },
+                            () => {
+                                console.log('Finish Auth')
+                            });
                     },
                     err => {
                         console.log(err)
                     },
                     () => {
                         console.log('Finish Auth')
-                    });
-                
-                
-                
-                this.router.navigateByUrl("/login");
+                    }
+                );
                 
             },
             err => {
@@ -88,10 +95,10 @@ export class Register {
             () => {
                 // console.log('Finish Auth')
             });
-        
+
     }
-    
-    
+
+
 }
 
 
@@ -100,6 +107,6 @@ interface FileReaderEventTarget extends EventTarget {
 }
 
 interface FileReaderEvent extends Event {
-    target: FileReaderEventTarget;
+    target:FileReaderEventTarget;
     getMessage():string;
 }
