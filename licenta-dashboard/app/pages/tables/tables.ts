@@ -1,10 +1,10 @@
 "use strict";
 
-import {Component} from "angular2/core";
-import {RouteParams, RouterLink, Router} from "angular2/router";
-import {FORM_DIRECTIVES} from "angular2/common";
+import {Component} from "@angular/core";
+import {RouteParams, RouterLink, Router} from "@angular/router-deprecated";
+import {FORM_DIRECTIVES} from "@angular/common";
 
-import {MATERIAL_DIRECTIVES} from "../../../node_modules/ng2-material/all";
+import {MATERIAL_DIRECTIVES} from "../../../node_modules/ng2-material/index";
 
 
 @Component({

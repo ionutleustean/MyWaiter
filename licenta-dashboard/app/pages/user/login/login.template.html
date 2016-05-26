@@ -7,26 +7,20 @@
 
         <form name="loinForm" class="login-form">
 
-
             <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Email</label>
-                    <input md-input type="email" [(value)]="user.username">
-                </md-input-container>
+                <md-input placeholder="Email" [(value)]="user.username" layout-fill></md-input>
+            </section>
+            
+            <section layout="row" layout-align="center center">
+                <md-input type="password" placeholder="Password" [(value)]="user.password" layout-fill></md-input>
             </section>
 
-            <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Password</label>
-                    <input md-input type="password" [(value)]="user.password">
-                </md-input-container>
-            </section>
 
             <section layout="row" layout-align="center center">
                 <button md-raised-button class="md-raised" layout-fill [routerLink]="['/Register']">Register</button>
                 <button md-raised-button class="md-raised md-primary" layout-fill (click)="submitLogin()">Login</button>
             </section>
-            
+
             <section layout="row" layout-align="end end">
                 <button md-button class="md-primary" (click)="requestResetPassword()">Reset Password</button>
             </section>

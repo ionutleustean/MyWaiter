@@ -8,42 +8,25 @@
         <form name="registerForm" class="register-form">
 
             <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Email</label>
-                    <input type="email" md-input [(value)]="user.email">
-                </md-input-container>
+                <md-input type="email" placeholder="Email" [(value)]="user.email" layout-fill></md-input>
             </section>
             
             <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Password</label>
-                    <input type="password" md-input [(value)]="user.password">
-                </md-input-container>
-            </section> 
-            
-            <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Password Confirmation</label>
-                    <input type="password" md-input [(value)]="user.confirmPassword">
-                </md-input-container>
-            </section>
-
-
-            <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Restaurant name</label>
-                    <input md-input [(value)]="user.firstName">
-                </md-input-container>
+                <md-input type="password" placeholder="Password" [(value)]="user.password" layout-fill></md-input>
             </section>
             
             <section layout="row" layout-align="center center">
-                <md-input-container class="md-block" layout-fill>
-                    <label>Address</label>
-                    <input md-input [(value)]="restaurant.Address">
-                </md-input-container>
+                <md-input type="password" placeholder="Password Confirmation" [(value)]="user.password" layout-fill></md-input>
             </section>
-
-
+            
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Restaurant name" [(value)]="user.firstName" layout-fill></md-input>
+            </section>
+            
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Address" [(value)]="user.Address" layout-fill></md-input>
+            </section>
+            
             <label class="custom-label">Short Description</label>
             <section layout="row" layout-align="center center">
                 <md-input-container class="md-block" layout-fill>
@@ -69,7 +52,6 @@
                     <input type="file" md-input (change)="handleUpload($event)" >
                 </md-input-container>
             </section>
-            
             
 
             <section layout="row" layout-align="center center">

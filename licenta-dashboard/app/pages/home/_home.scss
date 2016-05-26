@@ -1,72 +1,97 @@
 @import '../../styles/base/_variables.scss';
 
 page-home {
-    background: #eee;
+    background: #efefef;
+    display: block;
+    width: 100%;
+    height: 100%;
 
-    .sidebar {
-        background: $sidebarColor;
-        width: 250px;
+    md-sidenav-layout {
         height: 100%;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        color: #fff;
-        
-        .restaurant {
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            background: rgba(0,0,0,0.2);
 
-            .restaurant-logo {
-                width: 60px;
-                height: 60px;
-                overflow: hidden;
-                border-radius: 115px;
-                background: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .restaurant-title {
-                padding-left: 15px;
-            }
-        }
-        
-        md-content{
-            .menu-item{
-                margin: 0px;
-                padding: 7px 15px;
-                border-radius: 0px;
-                color: #fff;
-                text-align: left;
-                text-transform: none;
+        .sidebar, md-sidenav[mode=side] {
+            background-color: $sidebarColor;
+            width: 300px;
+            height: 100%;
+            color: #fff;
+            padding: 0px;
+
+            .restaurant {
                 display: flex;
                 align-items: center;
+                padding: 10px 15px;
+                background: rgba(0, 0, 0, 0.2);
+
+                .restaurant-logo {
+                    width: 50px;
+                    height: 50px;
+                    overflow: hidden;
+                    border-radius: 115px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .restaurant-title {
+                    padding-left: 15px;
+                }
             }
-            
-            .glyphicon{
-                font-size: 20px;
-                //color: #aaaaaa;
-                padding-right: 15px;
+
+            md-content {
+                .menu-item {
+                    margin: 0px;
+                    padding: 12px 15px;
+                    border-radius: 0px;
+                    color: #fff;
+                    text-align: left;
+                    text-transform: none;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .md-button-wrapper {
+                    align-items: center;
+                    display: flex;
+                }
+                
+                .glyphicon {
+                    font-size: 20px;
+                    //color: #aaaaaa;
+                    padding-right: 15px;
+                }
+
             }
-            
+
         }
 
-    }
-    
-    .right {
+   
+            md-toolbar {
+                
+                    background: white !important;
+                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+                    color: #555;
+                    height: 70px;
+                    justify-content: center;
+
+                md-toolbar-row {
+                    justify-content: space-between;
+
+                    //background: #2A3A4B;
+
+                    .left-toolbar {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .right-toolbar {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
         
-        height: 100%;
-        margin-left: 250px;
-
-        md-toolbar:not(.md-menu-toolbar) {
-            background: #fff;
-            color: #555;
-        }
-
-
+            }
+       
     }
 
 

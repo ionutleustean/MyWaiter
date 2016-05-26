@@ -1,9 +1,11 @@
 "use strict";
 
-import {Component} from "angular2/core";
-import {RouterLink, Router} from "angular2/router";
-import {FORM_DIRECTIVES} from "angular2/common";
-import {MATERIAL_DIRECTIVES} from "../../../../node_modules/ng2-material/all";
+import {Component} from "@angular/core";
+import {RouterLink, Router} from "@angular/router-deprecated";
+import {FORM_DIRECTIVES} from "@angular/common";
+import {MATERIAL_DIRECTIVES} from "../../../../node_modules/ng2-material/index";
+import {MD_INPUT_DIRECTIVES} from '@angular2-material/input';
+
 
 import {UserModel} from "../../../core/model/UserModel";
 import {RestaurantModel} from "../../../core/model/RestaurantModel";
@@ -13,7 +15,7 @@ import {OrderService} from "../../../core/services/OrderService";
 @Component({
     selector: "page-register",
     templateUrl: "pages/user/register/register.template.html",
-    directives: [MATERIAL_DIRECTIVES, FORM_DIRECTIVES, RouterLink],
+    directives: [MATERIAL_DIRECTIVES, FORM_DIRECTIVES, RouterLink, MD_INPUT_DIRECTIVES],
     providers: [UserModel, RestaurantModel, UserService, OrderService],
 
 })

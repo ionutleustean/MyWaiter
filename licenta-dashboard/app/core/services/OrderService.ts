@@ -1,7 +1,7 @@
 import 'rxjs/Rx';
-import {Http, Headers} from 'angular2/http';
-import {Router} from "angular2/router";
-import {Injectable} from 'angular2/core';
+import {Http, Headers} from '@angular/http';
+import {Router} from "@angular/router-deprecated";
+import {Injectable} from '@angular/core';
 import {ConfigBackand} from '../vars/ConfigBackand';
 import {RestaurantModel} from '../model/RestaurantModel';
 import {Cookie} from './CookieService';
@@ -54,6 +54,26 @@ export class OrderService {
      
         return $obs;
     }
+    
+    public addTable(RestaurantId:string, Seats:number, TableNumber:string) {
+        
+        let table = {
+            RestaurantId : RestaurantId,
+            Seats : Seats,
+            TableNumber : TableNumber
+        }
+
+        this.header.append('Content-Type', 'application/json');
+        this.header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.post(this.url + "Tables", JSON.stringify(table), {
+            headers: this.header
+        });
+        return $obs;
+        
+        
+    }
+    
 
 
 }

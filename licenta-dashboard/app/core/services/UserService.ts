@@ -1,7 +1,7 @@
 import 'rxjs/Rx';
-import {Http, Response, Headers, RequestOptions} from 'angular2/http';
-import {RouteConfig, Route, RouterOutlet, RouterLink, Router} from "angular2/router";
-import {Injectable} from 'angular2/core';
+import {Http, Response, Headers, RequestOptions} from '@angular/http';
+import {RouteConfig, Route, RouterOutlet, RouterLink, Router} from "@angular/router-deprecated";
+import {Injectable} from '@angular/core';
 import {ConfigBackand} from '../vars/ConfigBackand';
 import {UserModel} from '../model/UserModel';
 import {Cookie} from './CookieService';

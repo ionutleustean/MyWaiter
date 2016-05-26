@@ -1,17 +1,20 @@
 "use strict";
 
+
 // import the application
 import {App} from "./app";
 
 // import Angular 2
-import {bootstrap} from "angular2/platform/browser";
-import {provide, enableProdMode} from "angular2/core";
-import {HTTP_PROVIDERS} from "angular2/http";
-import {ELEMENT_PROBE_PROVIDERS} from "angular2/platform/common_dom";
+import {bootstrap} from "@angular/platform-browser-dynamic";
+import {provide, enableProdMode} from "@angular/core";
+import {HTTP_PROVIDERS} from "@angular/http";
+import {ELEMENT_PROBE_PROVIDERS} from "@angular/platform-browser";
+
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 // import Angular 2 Component Router
 // reference: http://blog.thoughtram.io/angular/2015/06/16/routing-in-angular-2.html
-import {ROUTER_PROVIDERS} from "angular2/router";
+import {ROUTER_PROVIDERS} from "@angular/router-deprecated";
 
 // enable production mode of Angular
 // enableProdMode(); // enable for production (also uncomment the import above!)
@@ -24,7 +27,9 @@ bootstrap(App, [
 	//appServicesInjectables, // alternative way of filling the injector with all the classes we want to be able to inject
 	ROUTER_PROVIDERS,
 	HTTP_PROVIDERS,
-	ELEMENT_PROBE_PROVIDERS, // remove in production
+	ELEMENT_PROBE_PROVIDERS,
+    provide(LocationStrategy,
+        {useClass: HashLocationStrategy})
 	// provide(LocationStrategy, { useClass: PathLocationStrategy }) // can be switched to HashLocationStrategy if you cannot configure your server appropriately for URL rewriting
 
 ]).then(

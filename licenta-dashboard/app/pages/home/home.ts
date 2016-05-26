@@ -1,10 +1,16 @@
 "use strict";
 
 // import Angular 2
-import {Component} from "angular2/core";
-import {RouteConfig, Route, RouterOutlet, RouterLink, Router} from "angular2/router";
-import {MATERIAL_DIRECTIVES, SidenavService} from "../../../node_modules/ng2-material/all";
-import {FORM_DIRECTIVES} from "angular2/common";
+import {Component} from "@angular/core";
+import {RouteConfig, Route, RouterOutlet, RouterLink, Router} from "@angular/router-deprecated";
+import {MATERIAL_DIRECTIVES, MdIcon} from "../../../node_modules/ng2-material/index";
+import {FORM_DIRECTIVES} from "@angular/common";
+import {Cookie} from "../../core/services/CookieService";
+
+import {MdToolbar} from '@angular2-material/toolbar';
+import {MD_SIDENAV_DIRECTIVES} from '@angular2-material/sidenav';
+
+
 import {UserService} from "../../core/services/UserService"
 import {OrderService} from "../../core/services/OrderService"
 import {RestaurantModel} from "../../core/model/RestaurantModel"
@@ -16,11 +22,13 @@ import {Products} from "../products/products";
 import {Tables} from "../tables/tables";
 
 
+
+
 @Component({
     selector: "page-home",
     templateUrl: "pages/home/home.template.html",
-    providers: [SidenavService, FORM_DIRECTIVES, MATERIAL_DIRECTIVES, UserService, OrderService],
-    directives: [RouterLink, RouterOutlet]
+    providers: [UserService, OrderService],
+    directives: [RouterLink, RouterOutlet, FORM_DIRECTIVES, MATERIAL_DIRECTIVES, MdToolbar, MdIcon, MD_SIDENAV_DIRECTIVES]
 })
 
 @RouteConfig([
@@ -36,7 +44,6 @@ export class Home {
     public restaurant = new  RestaurantModel();
     
     constructor(private router:Router,
-                public sidenav:SidenavService,
                 public userService:UserService,
                 public orderService:OrderService) {
 
@@ -60,7 +67,8 @@ export class Home {
                 let res = data.json();
                 this.restaurant = res.data[0];
                 
-                console.log(this.restaurant);
+                Cookie.setCookie("restaurant_id",res.data[0].id);
+                
             },
             err => {
                 console.log(err)
@@ -71,11 +79,5 @@ export class Home {
 
     }
 
-    open(name:string) {
-        this.sidenav.show(name);
-    }
 
-    close(name:string) {
-        this.sidenav.hide(name);
-    }
 }
