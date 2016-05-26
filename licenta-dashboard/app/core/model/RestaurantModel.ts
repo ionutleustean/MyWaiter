@@ -11,4 +11,5 @@ export class RestaurantModel {
     public Shortdescription:string= "";
     public Image:any = null;
     public Rating:string = "";
+    public UserMail:string = "";
 }

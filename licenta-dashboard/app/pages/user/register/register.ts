@@ -56,6 +56,7 @@ export class Register {
     submitRegister() {
 
         this.restaurant.Name = this.user.firstName;
+        this.restaurant.UserMail = this.user.email;
 
         console.log(this.restaurant);
 
