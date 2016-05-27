@@ -13,7 +13,6 @@ import {Cookie} from './CookieService';
 export class OrderService {
 
     url:string = ConfigBackand.api_url + "1/objects/";
-    header:Headers = new Headers();
 
     constructor(public http:Http, private router:Router) {
 
@@ -26,11 +25,14 @@ export class OrderService {
 
     public createRestaurant(restaurant:RestaurantModel) {
 
-        this.header.append('Content-Type', 'application/json');
-        this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('AnonymousToken', ConfigBackand.anonymous_token);
 
         var $obs = this.http.post(this.url + "Restaurants", JSON.stringify(restaurant), {
-            headers: this.header
+            headers: header
         });
         return $obs;
 
@@ -43,37 +45,89 @@ export class OrderService {
 
         let query = JSON.stringify([{"fieldName": "UserMail", "operator": "equals", "value": email}]);
 
-        this.header.append('Authorization', Cookie.getCookie("Authorization"));
+        let header:Headers = new Headers();
+
+        header.append('Authorization', Cookie.getCookie("Authorization"));
         
         console.log(query);
 
         var $obs = this.http.get(ConfigBackand.api_url + "1/objects/Restaurants?filter=" + encodeURI(query), {
-            headers: this.header
+            headers: header
         });
 
      
         return $obs;
     }
     
-    public addTable(RestaurantId:string, Seats:number, TableNumber:string) {
+    public addTable(table: { TableNumber:string, Seats:string }) {
         
-        let table = {
-            RestaurantId : RestaurantId,
-            Seats : Seats,
-            TableNumber : TableNumber
-        }
+        let query = {
+            RestaurantId : Cookie.getCookie("restaurant_id"),
+            Seats : table.Seats,
+            TableNumber : table.TableNumber
+        };
+        
+        let header:Headers = new Headers();
 
-        this.header.append('Content-Type', 'application/json');
-        this.header.append('Authorization', Cookie.getCookie("Authorization"));
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
 
-        var $obs = this.http.post(this.url + "Tables", JSON.stringify(table), {
-            headers: this.header
+
+        var $obs = this.http.post(ConfigBackand.api_url + "1/objects/Tables", JSON.stringify(query), {
+            headers: header
         });
+        return $obs;
+    }
+    
+    public getTable() {
+        
+        let restaurantId = Cookie.getCookie("restaurant_id");
+
+        let query = JSON.stringify([{"fieldName": "RestaurantId", "operator": "equals", "value": restaurantId}]);
+        
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.get(ConfigBackand.api_url + "1/objects/Tables?filter=" + encodeURI(query), {
+            headers: header
+        });
+        
+        return $obs;
+        
+    }
+    
+    public deleteTable(id:string) {
+        
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.delete(ConfigBackand.api_url + "1/objects/Tables/" + encodeURI(id), {
+            headers: header
+        });
+
+        return $obs;
+    }
+
+    
+    public editTable(id:string, table:{TableNumber:string, Seats:string}) {
+       
+       
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.put(ConfigBackand.api_url + "1/objects/Tables/" + encodeURI(id), JSON.stringify(table), {
+            headers: header
+        });
+        
         return $obs;
         
         
     }
-    
-
 
 }

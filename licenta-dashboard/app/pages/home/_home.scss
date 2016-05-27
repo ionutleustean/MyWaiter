@@ -7,7 +7,11 @@ page-home {
     height: 100%;
 
     md-sidenav-layout {
-        height: 100%;
+        top: 70px !important;
+
+        > md-content {
+            height: 100%;
+        }
 
         .sidebar, md-sidenav[mode=side] {
             background-color: $sidebarColor;
@@ -15,28 +19,6 @@ page-home {
             height: 100%;
             color: #fff;
             padding: 0px;
-
-            .restaurant {
-                display: flex;
-                align-items: center;
-                padding: 10px 15px;
-                background: rgba(0, 0, 0, 0.2);
-
-                .restaurant-logo {
-                    width: 50px;
-                    height: 50px;
-                    overflow: hidden;
-                    border-radius: 115px;
-                    background: #fff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .restaurant-title {
-                    padding-left: 15px;
-                }
-            }
 
             md-content {
                 .menu-item {
@@ -54,7 +36,7 @@ page-home {
                     align-items: center;
                     display: flex;
                 }
-                
+
                 .glyphicon {
                     font-size: 20px;
                     //color: #aaaaaa;
@@ -64,35 +46,63 @@ page-home {
             }
 
         }
-
-   
-            md-toolbar {
-                
-                    background: white !important;
-                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-                    color: #555;
-                    height: 70px;
-                    justify-content: center;
-
-                md-toolbar-row {
-                    justify-content: space-between;
-
-                    //background: #2A3A4B;
-
-                    .left-toolbar {
-                        display: flex;
-                        align-items: center;
-                    }
-
-                    .right-toolbar {
-                        display: flex;
-                        align-items: center;
-                    }
-                }
-        
-            }
-       
     }
 
+    md-toolbar {
+        background: white !important;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        color: #555;
+        height: 70px;
+        position: absolute;
+        z-index: 30;
+        justify-content: center;
+        padding: 0px !important;
+
+        md-toolbar-row {
+
+            .restaurant {
+                width: 300px;
+                display: flex;
+                align-items: center;
+                padding: 10px 15px;
+                color: white;
+                background: #273746;
+
+                .restaurant-logo {
+                    width: 50px;
+                    height: 50px;
+                    overflow: hidden;
+                    border-radius: 115px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .restaurant-title {
+                    padding-left: 15px;
+                }
+            }
+
+            //background: #2A3A4B;
+
+            .toolbar-container {
+                justify-content: space-between;
+                display: flex;
+                flex-grow: 1;
+
+                .left-toolbar {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .right-toolbar {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
 
 }

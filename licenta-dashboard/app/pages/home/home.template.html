@@ -1,14 +1,35 @@
-<md-sidenav-layout>
+
+<md-toolbar class="fixed-toolbar ">
+
+    <div class="md-title restaurant">
+
+        <div class="restaurant-logo"><img src={{restaurant.Image}}/></div>
+        <div class="restaurant-title"> {{restaurant.Name}}</div>
+
+    </div>
+    
+    <div class="toolbar-container">
+    
+    <div class="left-toolbar">
+        <button class="md-raised md-primary" (click)="left.toggle()">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <h2 class="md-toolbar-tools md-toolbar-tools-bottom">
+            <span class="md-flex">Dashboard</span>
+        </h2>
+    </div>
+    <div class="right-toolbar">
+        <button (click)="right.toggle()">
+            <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+        </button>
+    </div>
+    </div>
+
+</md-toolbar>
+
+<md-sidenav-layout fullscreen layout="row">
     <md-sidenav class="sidebar" #left [opened]="true" mode="side" layout-padding>
-
-        <div class="md-title restaurant">
-
-            <div class="restaurant-logo"><img src={{restaurant.Image}}/></div>
-            <div class="restaurant-title"> {{restaurant.Name}}</div>
-
-        </div>
-
-
         <md-content>
 
             <button md-button layout-fill class="menu-item" [routerLink]="['/Home', 'Tables']">
@@ -39,36 +60,16 @@
         <h2>Right Sidenav.</h2>
         <button md-raised-button class="md-raised md-primary" (click)="right.close()">Close</button>
     </md-sidenav>
-
-
-    <md-toolbar>
-
-        <div class="left-toolbar">
-            <button class="md-raised md-primary" (click)="left.toggle()">
-                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-            </button>
-
-            <h2 class="md-toolbar-tools md-toolbar-tools-bottom">
-                <span class="md-flex">Dashboard</span>
-            </h2>
-        </div>
-        <div class="right-toolbar">
-            <button (click)="right.toggle()">
-                <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
-            </button>
-        </div>
-
-    </md-toolbar>
-
-
-    <md-content layout-padding>
+    
+    
+    <div layout-padding>
 
 
         <div class="inner-outlet">
             <router-outlet></router-outlet>
         </div>
 
-    </md-content>
+    </div>
 
 
     <!--<div class="sidebar">-->

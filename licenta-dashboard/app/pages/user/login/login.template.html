@@ -8,11 +8,11 @@
         <form name="loinForm" class="login-form">
 
             <section layout="row" layout-align="center center">
-                <md-input placeholder="Email" [(value)]="user.username" layout-fill></md-input>
+                <md-input placeholder="Email" [(ngModel)]="user.username" layout-fill></md-input>
             </section>
             
             <section layout="row" layout-align="center center">
-                <md-input type="password" placeholder="Password" [(value)]="user.password" layout-fill></md-input>
+                <md-input type="password" placeholder="Password" [(ngModel)]="user.password" layout-fill></md-input>
             </section>
 
 
