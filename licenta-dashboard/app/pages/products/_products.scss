@@ -1,3 +1,45 @@
 page-products {
 
+    .title-container {
+
+        .space-between {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    }
+
+    .products-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .product-container {
+            padding: 0px;
+            
+            
+            .md-headline {
+                font-size: 18px;
+                line-height: 20px;
+            }
+            
+            .product-settings-actions {
+                position: absolute;
+                top: 0px;
+                color: white;
+                justify-content: flex-end;
+                right: 0px;
+                background: rgba(0,0,0,0.5);
+                
+                
+                button {
+                    min-width: 50px;
+                }
+                
+            }
+            
+        }
+        
+    }
 }

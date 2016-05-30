@@ -13,6 +13,8 @@ import {MD_SIDENAV_DIRECTIVES} from '@angular2-material/sidenav';
 
 import {UserService} from "../../core/services/UserService"
 import {OrderService} from "../../core/services/OrderService"
+import {ImgurService} from '../../core/services/ImgurService';
+
 import {RestaurantModel} from "../../core/model/RestaurantModel"
 
 
@@ -27,7 +29,7 @@ import {Tables} from "../tables/tables";
 @Component({
     selector: "page-home",
     templateUrl: "pages/home/home.template.html",
-    providers: [UserService, OrderService],
+    providers: [UserService, OrderService, ImgurService],
     directives: [RouterLink, RouterOutlet, FORM_DIRECTIVES, MATERIAL_DIRECTIVES, MdToolbar, MdIcon, MD_SIDENAV_DIRECTIVES]
 })
 

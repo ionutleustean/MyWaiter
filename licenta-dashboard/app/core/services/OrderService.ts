@@ -4,6 +4,7 @@ import {Router} from "@angular/router-deprecated";
 import {Injectable} from '@angular/core';
 import {ConfigBackand} from '../vars/ConfigBackand';
 import {RestaurantModel} from '../model/RestaurantModel';
+import {ProductsModel} from '../model/ProductsModel';
 import {Cookie} from './CookieService';
 
 
@@ -126,8 +127,71 @@ export class OrderService {
         });
         
         return $obs;
+    }
+
+    public addProduct(product: ProductsModel) {
         
+        product.RestaurantId = Cookie.getCookie("restaurant_id");
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+
+        var $obs = this.http.post(ConfigBackand.api_url + "1/objects/Products", JSON.stringify(product), {
+            headers: header
+        });
+        return $obs;
+    }
+
+
+    public getProducts() {
+
+        let restaurantId = Cookie.getCookie("restaurant_id");
+
+        let query = JSON.stringify([{"fieldName": "RestaurantId", "operator": "equals", "value": restaurantId}]);
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.get(ConfigBackand.api_url + "1/objects/Products?filter=" + encodeURI(query), {
+            headers: header
+        });
+
+        return $obs;
+
+    }
+
+    public editProduct(id:string, product:ProductsModel) {
+        
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.put(ConfigBackand.api_url + "1/objects/Products/" + encodeURI(id), JSON.stringify(product), {
+            headers: header
+        });
+
+        return $obs;
         
     }
 
+    public deleteProduct(id:string) {
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.delete(ConfigBackand.api_url + "1/objects/Products/" + encodeURI(id), {
+            headers: header
+        });
+
+        return $obs;
+    }
+    
 }

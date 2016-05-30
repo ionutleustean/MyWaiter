@@ -17,6 +17,19 @@ page-tables {
         height: 100%;
         width: 100%;
         display: inline-block;
+
+        .table-card:hover{
+            background: $primary;
+            color: white;
+            cursor: pointer;
+
+
+            .table-free {
+                border-top: 1px solid white;
+                padding-top: 10px;
+            }
+            
+        }
         
         .table-container {
             padding: 0px;

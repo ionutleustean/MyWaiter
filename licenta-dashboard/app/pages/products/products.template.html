@@ -1,51 +1,179 @@
-<div class="content">
+<main class="content">
 
-    <md-content layout-margin="flex-md">
+    <md-dialog #add_product_dialog (onClose)="addProduct($event)">
+
+        <h2> Add product </h2>
+        <form name="addProduct" class="add-product-form">
+
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Product Number" [(ngModel)]="add_product.Name" layout-fill></md-input>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <textarea placeholder="ShortDescription" [(ngModel)]="add_product.ShortDescription"
+                          layout-fill></textarea>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <textarea placeholder="Description" [(ngModel)]="add_product.Description" layout-fill></textarea>
+            </section>
 
 
+            <label class="custom-label">Image</label>
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <input type="file" md-input (change)="handleUploadImage($event)">
+                </md-input-container>
+            </section>
 
-        <!--<form name="resetForm" class="reset-form">-->
-            <!---->
-            <!--<section layout="row" layout-align="center center">-->
-                <!--<md-input-container class="md-block" layout-fill>-->
-                    <!--<label>New Password</label>-->
-                    <!--<input md-input type="password" [(value)]="password">-->
-                <!--</md-input-container>-->
-            <!--</section>-->
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Price" [(ngModel)]="add_product.Price" layout-fill></md-input>
+            </section>
 
-            <!--<section layout="row" layout-align="center center">-->
-                <!--<button md-raised-button class="md-raised" layout-fill [routerLink]="['/Login']">Login</button>-->
-                <!--<button md-raised-button class="md-raised md-primary" layout-fill (click)="resetPassword()">Reset Password</button>-->
-            <!--</section>-->
-            <!---->
-        <!--</form>-->
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Category" [(ngModel)]="add_product.Category" layout-fill></md-input>
+            </section>
+
+
+            <md-dialog-actions>
+                <button md-button class="md-primary" (click)="add_product_dialog.close(false)">
+                    <span>Cancel</span>
+                </button>
+                <button md-button class="md-primary" (click)="add_product_dialog.close(true)">
+                    <span>Add Product</span>
+                </button>
+            </md-dialog-actions>
+        </form>
+
+    </md-dialog>
+
+
+    <md-dialog #edit_product_dialog (onClose)="editProduct($event)">
+        
+        <h2> Edit product </h2>
+        <form name="editProduct" class="edit-product-form">
+
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Product Number" [(ngModel)]="edit_product.Name" layout-fill></md-input>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <textarea placeholder="ShortDescription" [(ngModel)]="edit_product.ShortDescription"
+                          layout-fill></textarea>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <textarea placeholder="Description" [(ngModel)]="edit_product.Description" layout-fill></textarea>
+            </section>
+
+
+            <label class="custom-label">Image</label>
+            <section layout="row" layout-align="center center">
+                <md-input-container class="md-block" layout-fill>
+                    <input type="file" md-input (change)="handleUploadImage($event)">
+                </md-input-container>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Price" [(ngModel)]="edit_product.Price" layout-fill></md-input>
+            </section>
+
+            <section layout="row" layout-align="center center">
+                <md-input placeholder="Category" [(ngModel)]="edit_product.Category" layout-fill></md-input>
+            </section>
+
+
+            <md-dialog-actions>
+                <button md-button class="md-primary" (click)="edit_product_dialog.close(false)">
+                    <span>Cancel</span>
+                </button>
+                <button md-button class="md-primary" (click)="edit_product_dialog.close(true)">
+                    <span>Edit Product</span>
+                </button>
+            </md-dialog-actions>
+        </form>
+
+    </md-dialog>
+
+
+    <md-content layout-margin="flex-md" class="scrollable">
 
         <md-card>
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">Products</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <p>
-                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
-                <p>
-                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
-                <p>
-                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
+            <md-card-content class="title-container">
+
+                <section layout="row" class="space-between">
+
+                    <span class="md-headline"> {{countProducts}} products</span>
+                    
+                    <span class="pull-right"> 
+                        <button md-button class="md-raised md-primary" (click)="add_product_dialog.show()">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            Add Product
+                        </button>
+                    </span>
+                </section>
+                <section layout="row" layout-align="center center">
+                    <md-input placeholder="Search" #search (keyup)="0" layout-fill></md-input>
+
+                </section>
             </md-card-content>
-            <md-card-actions layout="row" layout-align="end center">
-                <button md-button>Action 1</button>
-                <button md-button>Action 2</button>
-            </md-card-actions>
         </md-card>
+
+
+        <div class="products-container">
+
+
+            <div class="product-container col-xs-12 col-sm-6 col-md-4 col-lg-3"
+                 *ngFor="let product of display_products | product_search:search.value">
+                <md-card>
+
+                    <img [src]="product.Image" class="md-card-image">
+
+
+                    <md-card-actions class="product-settings-actions" layout="row" layout-align="end center">
+                        <button md-button>
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"
+                                  (click)="setProductForEdit(product); edit_product_dialog.show()">
+                            </span>
+                        </button>
+                        <button md-button>
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"
+                        (click)="deleteProduct(product.id)"></span>
+                        </button>
+                    </md-card-actions>
+
+                    <md-card-content>
+
+                        <md-card-title-text>
+                            <span class="md-headline">{{product.Name}}</span>
+                        </md-card-title-text>
+
+                        <div class="">
+                            <span> <strong> Raiting: </strong> </span>
+                            <span> {{product.Rating}} </span>
+                        </div>
+
+                        <div class="">
+                            <span> <strong> Category: </strong> </span>
+                            <span> {{product.Category}} </span>
+                        </div>
+
+                        <div class="">
+                            <span> <strong> Price: </strong> </span>
+                            <span> {{product.Price}} </span>
+                        </div>
+
+                        <div class=""> {{product.ShortDescription}}</div>
+
+
+                    </md-card-content>
+
+                </md-card>
+            </div>
+
+
+        </div>
 
     </md-content>
 
-</div>
+</main>

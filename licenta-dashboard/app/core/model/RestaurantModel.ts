@@ -1,8 +1,3 @@
-/**
- * Created by Ionut on 24/05/16.
- */
-
-
 
 export class RestaurantModel {
     public Name:string = "";
