@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab339eb7-747c-469f-881a-1537048e181d" name="Default" comment="">
+    <list default="true" id="ab339eb7-747c-469f-881a-1537048e181d" name="Default" comment="pipe - removing an error">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Leustean_Ionut_[Licenta-2016].pages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-ts-ionic/app/pages/order/menu/menu.ts" afterPath="$PROJECT_DIR$/../licenta-ts-ionic/app/pages/order/menu/menu.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-ts-ionic/app/pages/order/restaurants/restaurants.html" afterPath="$PROJECT_DIR$/../licenta-ts-ionic/app/pages/order/restaurants/restaurants.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-ts-ionic/app/servises/backand/Order.ts" afterPath="$PROJECT_DIR$/../licenta-ts-ionic/app/servises/backand/Order.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/core/services/UserService.ts" afterPath="$PROJECT_DIR$/app/core/services/UserService.ts" />
     </list>
     <ignored path="licenta-dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,13 +24,13 @@
     <favorites_list name="licenta-dashboard" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.9">
+    <splitter split-orientation="horizontal" split-proportion="0.48828608">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="products.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/pages/products/products.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
+                <state relative-caret-position="1860">
                   <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
                   <folding>
                     <element signature="e#15#55#0" expanded="true" />
@@ -45,7 +44,7 @@
           <file leaf-file-name="home.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/pages/home/home.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
+                <state relative-caret-position="75">
                   <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                   <folding>
                     <element signature="e#35#75#0" expanded="true" />
@@ -59,9 +58,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <marker date="1464557802000" expanded="true" signature="30:297" ph="{...}" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -89,7 +86,7 @@
           <file leaf-file-name="products.template.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/pages/products/products.template.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
+                <state relative-caret-position="420">
                   <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
                   <folding>
                     <element signature="n#md-dialog#0;n#main#0;n#!!top" expanded="false" />
@@ -102,7 +99,7 @@
           <file leaf-file-name="_tables.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/pages/tables/_tables.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
+                <state relative-caret-position="495">
                   <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="34" selection-end-column="25" />
                   <folding />
                 </state>
@@ -132,7 +129,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="OrderService.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/core/services/OrderService.ts">
               <provider selected="true" editor-type-id="text-editor">
@@ -148,8 +145,8 @@
           <file leaf-file-name="ImgurService.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/core/services/ImgurService.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="173">
-                  <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+                <state relative-caret-position="-343">
+                  <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#17#0" expanded="true" />
                   </folding>
@@ -157,11 +154,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Rx.d.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Rx.d.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/node_modules/rxjs/Rx.d.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
+                <state relative-caret-position="435">
+                  <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -177,11 +174,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserService.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="UserService.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/core/services/UserService.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
+                <state relative-caret-position="645">
+                  <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -229,7 +226,6 @@
         <option value="$PROJECT_DIR$/app/pages/tables/table.ts" />
         <option value="$PROJECT_DIR$/app/pages/user/register/_register.scss" />
         <option value="$PROJECT_DIR$/app/core/vars/ConfigBackand.ts" />
-        <option value="$PROJECT_DIR$/app/core/services/UserService.ts" />
         <option value="$PROJECT_DIR$/app/pages/user/reset-password/reset-password.ts" />
         <option value="$PROJECT_DIR$/app/pages/user/settings/settings.ts" />
         <option value="$PROJECT_DIR$/.tmp/core/app.js" />
@@ -267,6 +263,7 @@
         <option value="$PROJECT_DIR$/app/pages/products/products.template.html" />
         <option value="$PROJECT_DIR$/app/pages/products/products.ts" />
         <option value="$PROJECT_DIR$/app/core/pipes/ProductSearchPipe.ts" />
+        <option value="$PROJECT_DIR$/app/core/services/UserService.ts" />
       </list>
     </option>
   </component>
@@ -410,7 +407,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -594,6 +590,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -745,7 +742,8 @@
       <workItem from="1464346292219" duration="262000" />
       <workItem from="1464371742047" duration="15517000" />
       <workItem from="1464532548565" duration="81000" />
-      <workItem from="1464532646514" duration="22325000" />
+      <workItem from="1464532646514" duration="23852000" />
+      <workItem from="1464617515299" duration="1746000" />
     </task>
     <task id="LOCAL-00001" summary="login template">
       <created>1463248818220</created>
@@ -831,11 +829,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464571075310</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="pipe - removing an error">
+      <created>1464610937579</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1464610937581</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189233000" />
+    <option name="totallyTimeSpent" value="192506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,16 +856,15 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.49361023" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23913044" sideWeight="0.4685836" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23913044" sideWeight="0.4685836" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.5063898" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13525027" sideWeight="0.535" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13631523" sideWeight="0.5392857" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.49361023" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753623" sideWeight="0.41533548" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27486438" sideWeight="0.41533548" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.5537806" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1517572" sideWeight="0.49614793" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13525027" sideWeight="0.465" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.47816828" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13631523" sideWeight="0.46071428" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -870,6 +874,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.47816828" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -897,7 +902,8 @@
     <MESSAGE value="update angular 2 RC" />
     <MESSAGE value="table page - add/edit/delete" />
     <MESSAGE value="product page - add/edit/delete/search" />
-    <option name="LAST_COMMIT_MESSAGE" value="product page - add/edit/delete/search" />
+    <MESSAGE value="pipe - removing an error" />
+    <option name="LAST_COMMIT_MESSAGE" value="pipe - removing an error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1062,9 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="n#md-sidenav#1;n#md-sidenav-layout#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,7 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,7 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="53" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,24 +1151,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="n#md-dialog#0;n#main#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/tables/_tables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
+        <state relative-caret-position="495">
           <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="34" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/services/UserService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1180,19 +1170,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/vars/ConfigImgur.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/rxjs/Observer.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,35 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/services/ImgurService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/services/OrderService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/rxjs/Rx.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,7 +1210,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/products/products.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
+        <state relative-caret-position="1860">
           <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
             <element signature="e#15#55#0" expanded="true" />
@@ -1272,15 +1224,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1464557802000" expanded="true" signature="30:297" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/products/products.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="420">
           <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
           <folding>
             <element signature="n#md-dialog#0;n#main#0;n#!!top" expanded="false" />
@@ -1291,11 +1241,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/home/home.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="75">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#35#75#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rxjs/Rx.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/services/OrderService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/services/ImgurService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-343">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/vars/ConfigImgur.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/services/UserService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

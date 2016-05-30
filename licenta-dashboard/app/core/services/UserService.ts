@@ -54,6 +54,9 @@ export class UserService {
             this.router.navigateByUrl("/login");
         }
     }
+    
+    
+    
 
     public createUser(user:UserModel) {
 
