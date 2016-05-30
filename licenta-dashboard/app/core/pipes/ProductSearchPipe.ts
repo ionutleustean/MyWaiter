@@ -9,6 +9,6 @@ import {Pipe, PipeTransform} from '@angular/core';
 export class ProductSearchPipe implements PipeTransform {
     transform(items: any[], args: any[]): any {
         
-        return items.filter(item => item.Name.toString().toLocaleUpperCase().indexOf(args.toLocaleUpperCase()) !== -1);
+        return items.filter(item => item.Name.toString().toLocaleUpperCase().indexOf(args.toString().toLocaleUpperCase()) !== -1);
     }
 }
