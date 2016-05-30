@@ -8,7 +8,6 @@ import {ConfigBackand} from '../vars/ConfigBackand'
 
 export class Order {
 
-    header:Headers = new Headers();
 
     constructor(public http:Http) {
 
@@ -17,11 +16,12 @@ export class Order {
 
     public getRestaurants() {
 
+        let header:Headers = new Headers();
 
-        this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
+        header.append('AnonymousToken', ConfigBackand.anonymous_token);
 
         return this.http.get(ConfigBackand.api_url + '1/objects/Restaurants', {
-            headers: this.header
+            headers: header
         })
             .retry(3)
             .map(res => res.json().data.map(r => r))
@@ -34,10 +34,12 @@ export class Order {
         {
             let filter = JSON.stringify([{"fieldName": "RestaurantId", "operator": "equals", "value": restaurantId}]);
 
-            this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
+            let header:Headers = new Headers();
+
+            header.append('AnonymousToken', ConfigBackand.anonymous_token);
 
             return this.http.get(ConfigBackand.api_url + '1/objects/Tables?filter=' + encodeURI(filter), {
-                headers: this.header
+                headers: header
             })
                 .retry(3)
                 .map(res => res.json().data.map(r => r))
@@ -52,13 +54,14 @@ export class Order {
         if (restaurantId != null || restaurantId != "")
         {
             let filter = JSON.stringify([
-                {"fieldName": "Restaurant", "operator": "equals", "value": restaurantId},
+                {"fieldName": "RestaurantId", "operator": "equals", "value": restaurantId},
             ]);
 
-            this.header.append('AnonymousToken', ConfigBackand.anonymous_token);
+            let header:Headers = new Headers();
+            header.append('AnonymousToken', ConfigBackand.anonymous_token);
 
-            return this.http.get(ConfigBackand.api_url + '1/objects/Product?filter=' + encodeURI(filter), {
-                headers: this.header
+            return this.http.get(ConfigBackand.api_url + '1/objects/Products?filter=' + encodeURI(filter), {
+                headers: header
             })
                 .retry(3)
                 .map(res => res.json().data.map(r => r))
