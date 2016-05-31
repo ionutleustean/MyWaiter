@@ -1,92 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14f9e784-4059-48b3-a700-25ac4ca5c310" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/img/homepage_background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/img/menu/apple_bacon_pork_burger.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/img/restaurants/british_pub.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/img/restaurants/la_strada.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/MyWaiter-client.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/libraries/licenta_ts_ionic_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/app.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/model/RestaurantModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/model/RestaurantModel.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/model/UserModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/model/UserModel.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/homePage/homePage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/homePage/homePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/homePage/homePage.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/homePage/homePage.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/menu/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/menu/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/menu/menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/menu/menu.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/tables/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/tables/tables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/tables/tables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/order/tables/tables.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/tabs/tabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/tabs/tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/tabs/tabs.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/logIn/logIn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/logIn/logIn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/logIn/logIn.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/logIn/logIn.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/register/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/register/register.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/register/register.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/pages/user/register/register.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/scripts/pushNotification.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Auth.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Example.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Order.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/User.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/User.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/vars/ConfigBackand.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/servises/vars/ConfigBackand.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/theme/app.core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/theme/app.ios.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/theme/app.md.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/theme/app.variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/app/theme/app.wp.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/hooks/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/hooks/after_prepare/010_add_platform_class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/typings/browser.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/typings/browser/ambient/es6-shim/index.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/typings/main.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/typings/main/ambient/es6-shim/index.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jscs.xml" />
+    <list default="true" id="14f9e784-4059-48b3-a700-25ac4ca5c310" name="Default" comment="new name">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-hdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-ldpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-mdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-xhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-xxhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-xxxhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-hdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-ldpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-mdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-xhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-xxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-hdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-ldpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-mdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-xhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-xxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-40@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-50@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-60@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-60@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-72@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-76@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-small@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-small@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-568h@2x~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-667h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-736h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Landscape-736h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Landscape@2x~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Landscape~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Portrait@2x~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Portrait~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default@2x~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/splash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/ionic.config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/tsconfig.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/typings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyWaiter-client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/workspace.xml" />
     </list>
     <ignored path="licenta-ts-ionic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -696,7 +667,7 @@
       <workItem from="1464193377338" duration="1034000" />
       <workItem from="1464198623963" duration="2093000" />
       <workItem from="1464571184676" duration="1392000" />
-      <workItem from="1464734996046" duration="563000" />
+      <workItem from="1464734996046" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="adjust gulpfile">
       <created>1462709462818</created>
@@ -796,11 +767,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464735567597</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="new name">
+      <created>1464735821867</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1464735821867</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102511000" />
+    <option name="totallyTimeSpent" value="102575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -813,11 +791,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-186" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31948882" sideWeight="0.39973083" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31948882" sideWeight="0.6002692" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31948882" sideWeight="0.6002692" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.49574015" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32699275" sideWeight="0.48296058" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.51916933" order="11" side_tool="true" content_ui="tabs" />
@@ -864,7 +842,8 @@
     <MESSAGE value="table page + restaurantId condition" />
     <MESSAGE value="table page" />
     <MESSAGE value="new products version" />
-    <option name="LAST_COMMIT_MESSAGE" value="new products version" />
+    <MESSAGE value="new name" />
+    <option name="LAST_COMMIT_MESSAGE" value="new name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1135,6 +1114,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
