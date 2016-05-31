@@ -1,62 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14f9e784-4059-48b3-a700-25ac4ca5c310" name="Default" comment="new name">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-hdpi-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-ldpi-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-mdpi-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-xhdpi-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-xxhdpi-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/icon/drawable-xxxhdpi-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-hdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-ldpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-mdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-xhdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-xxhdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-hdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-ldpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-mdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-xhdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-xxhdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-40@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-50@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-60@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-60@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-72@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-76@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-small@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon-small@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/icon/icon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-568h@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-667h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-736h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Landscape-736h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Landscape@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Landscape~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Portrait@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default-Portrait~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/ios/splash/Default~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/resources/splash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/ionic.config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyWaiter-client/typings.json" />
+    <list default="true" id="14f9e784-4059-48b3-a700-25ac4ca5c310" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page1/page1.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page2/page2.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MyWaiter-client/app/pages/page3/page3.ts" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyWaiter-client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/workspace.xml" />
     </list>
     <ignored path="licenta-ts-ionic.iws" />
@@ -77,108 +34,7 @@
     <favorites_list name="licenta-ts-ionic" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Example.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Example.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Auth.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Auth.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="64" column="56" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Order.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/User.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="37" column="64" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigBackand.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/vars/ConfigBackand.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurants.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurants.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="46" column="34" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tables.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/tables/tables.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/menu/menu.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -391,78 +247,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -481,37 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConfigBackand.ts" />
-              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyWaiter-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backand" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -667,7 +421,7 @@
       <workItem from="1464193377338" duration="1034000" />
       <workItem from="1464198623963" duration="2093000" />
       <workItem from="1464571184676" duration="1392000" />
-      <workItem from="1464734996046" duration="627000" />
+      <workItem from="1464734996046" duration="1043000" />
     </task>
     <task id="LOCAL-00001" summary="adjust gulpfile">
       <created>1462709462818</created>
@@ -774,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464735821867</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="new name -">
+      <created>1464735894178</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1464735894178</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102575000" />
+    <option name="totallyTimeSpent" value="102991000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -793,15 +554,15 @@
     <frame x="1440" y="-186" width="1920" height="1200" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31948882" sideWeight="0.39973083" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31948882" sideWeight="0.3988024" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31948882" sideWeight="0.6002692" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31948882" sideWeight="0.6011976" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.49574015" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32699275" sideWeight="0.48296058" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32699275" sideWeight="0.48296058" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.51916933" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789856" sideWeight="0.48083067" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24412297" sideWeight="0.44675186" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24365942" sideWeight="0.44675186" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -843,7 +604,8 @@
     <MESSAGE value="table page" />
     <MESSAGE value="new products version" />
     <MESSAGE value="new name" />
-    <option name="LAST_COMMIT_MESSAGE" value="new name" />
+    <MESSAGE value="new name -" />
+    <option name="LAST_COMMIT_MESSAGE" value="new name -" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1133,14 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/User.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="37" column="64" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Example.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1149,50 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/vars/ConfigBackand.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/Auth.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
           <caret line="64" column="56" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/menu/menu.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/tables/tables.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1207,8 +921,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../MyWaiter-client/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="600">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/backand/User.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="37" column="64" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/servises/vars/ConfigBackand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/restaurants/restaurants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/tables/tables.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyWaiter-client/app/pages/order/menu/menu.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding />
         </state>
       </provider>
