@@ -1,0 +1,21 @@
+@import "../../../theme/app.variables";
+
+
+ion-row {
+  padding: 0px;
+
+  ion-col{
+    padding: 0px;
+  }
+
+  .restaurant-thumbnail {
+    float: left;
+    height: 100%;
+    margin-right: map-get($dimension, medium);
+
+    > img {
+      width: 100%;
+      max-width: 130px;
+    }
+  }
+}

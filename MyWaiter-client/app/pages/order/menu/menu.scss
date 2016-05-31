@@ -1,0 +1,13 @@
+@import "../../../theme/app.variables";
+
+.menu-content {
+  position: relative;
+
+  .add-product {
+    top: -50px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+}

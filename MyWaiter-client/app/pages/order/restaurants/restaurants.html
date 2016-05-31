@@ -1,0 +1,47 @@
+<div>
+    <ion-navbar primary *navbar>
+        <ion-title>Alege restaurantul</ion-title>
+    </ion-navbar>
+
+</div>
+
+<ion-content class="restaurants">
+    <ion-card *ngFor="#item of restaurants #i = index">
+        <!--<img src="img/nin-live.png"/>-->
+
+        <ion-card-content>
+            <ion-row>
+                <ion-col width-25>
+                    <div class="restaurant-thumbnail">
+                        <img [src]="item.Image" (error)="updateImgSrc(i)">
+                    </div>
+                </ion-col>
+                <ion-col width-75>
+                    <div>
+                        <h2 class="card-title" primary>
+                        {{item.Name}}
+                    </h2>
+                        <p>
+                            {{item.ShortDescription}}
+                        </p>
+                        <p>
+                            <ion-icon [hidden]="!item.Address" name="pin"></ion-icon>
+                            {{item.Address}}
+                        </p>
+                        <ion-item>
+                        <button (click)="goToTables(item.id)" clear item-right>
+                            <ion-icon name="done-all" class="icon ion-ios-done-all"></ion-icon>
+
+                            Alege
+                        </button>
+                            </ion-item>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+
+        </ion-card-content>
+
+    </ion-card>
+
+</ion-content>
