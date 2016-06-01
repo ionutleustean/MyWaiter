@@ -11,12 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var ionic_angular_1 = require('ionic-angular');
 var Order_1 = require('../../../servises/backand/Order');
+var cart_1 = require('../cart/cart');
 var Menu = (function () {
     function Menu(nav, navParams, order) {
         this.nav = nav;
         this.order = order;
+        this.orders = [];
         this.restaurantId = navParams.get("restaurantId");
         this.tableNr = navParams.get("tableNr");
+        if (navParams.get("orders")) {
+            this.orders = navParams.get("orders");
+        }
+        ;
         this.menu = [];
         this.getMenu(this.restaurantId);
     }
@@ -46,6 +52,17 @@ var Menu = (function () {
             this.menu[index].desc = this.menu[index].Description;
             this.menu[index].descIcon = "chevron-up";
         }
+    };
+    Menu.prototype.addOrder = function (product) {
+        console.log(product);
+        this.orders.push(product);
+    };
+    Menu.prototype.goToCart = function () {
+        this.nav.push(cart_1.Cart, {
+            orders: this.orders,
+            restaurantId: this.restaurantId,
+            tableNr: this.tableNr,
+        });
     };
     Menu.prototype.logError = function (err) {
     };

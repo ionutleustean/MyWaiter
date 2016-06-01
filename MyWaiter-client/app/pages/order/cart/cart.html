@@ -1,0 +1,48 @@
+<ion-navbar *navbar primary hideBackButton>
+    <button menuToggle (click)="goBack()">
+        <ion-icon name="arrow-round-back"></ion-icon>
+    </button>
+    <ion-title>Finalizeaza comanda</ion-title>
+</ion-navbar>
+
+<ion-content class="cart">
+    <div class="bottom-margin">
+
+
+        <ion-list>
+            <ion-item *ngFor=" #item of orders #index = index">
+
+                <div class="product">
+
+                    <div>
+                        <div> {{item.Name}}</div>
+                        <div> {{item.Price}}</div>
+                    </div>
+                    <div>
+                        <button primary clear (click)="removeProductFromCart(index)">
+                            <ion-icon name="trash"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+    </div>
+
+
+    <ion-toolbar class="bottom-footer" position="bottom" *ngIf="orders.length">
+        <div>
+            <div class="footer-wrapper">
+                <div class="total"> {{total}} Lei </div>
+
+                <button primary clear>
+                    Trimite
+                    <ion-icon name="send"></ion-icon>
+
+                </button>
+            </div>
+        </div>
+    </ion-toolbar>
+
+</ion-content>

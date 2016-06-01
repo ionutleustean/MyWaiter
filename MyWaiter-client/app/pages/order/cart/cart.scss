@@ -1,19 +1,17 @@
 @import "../../../theme/app.variables";
 
+
 .bottom-margin {
   margin-bottom: 60px;
-}
 
-.menu-content {
-  position: relative;
-
-  .add-product {
-    top: -50px;
-    right: 0;
-    position: absolute;
-    z-index: 1;
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
+
 }
+
 
 .bottom-footer {
   bottom: 0px;
@@ -24,7 +22,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .order-size {
+    .total{
       font-weight: 700;
       padding: 0px 10px;
     }

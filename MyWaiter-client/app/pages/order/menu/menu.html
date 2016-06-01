@@ -3,32 +3,48 @@
 </ion-navbar>
 
 <ion-content class="menu">
+    <div class="bottom-margin">
+
+        <ion-card *ngFor="#item of menu #index = index">
+
+            <img [src]="item.Image" (error)="updateImgSrc(index)">
+            <ion-card-content>
+                <div class="menu-content">
+                    <button fab fab-right class="add-product" (click)="addOrder(item)">
+                        +
+                    </button>
+
+                    <ion-card-title>{{item.Name}}</ion-card-title>
+                    <p>{{item.desc}}</p>
 
 
-    <ion-card *ngFor="#item of menu #index = index">
+                    <ion-item>
+                        <span item-left>{{item.Price}}</span>
+                        <span item-left>Lei</span>
+                        <button primary clear item-right (click)="toggleDescription(index)">
+                            <ion-icon [name]="item.descIcon"></ion-icon>
+                            Show more
+                        </button>
+                    </ion-item>
+                </div>
+            </ion-card-content>
 
-        <img [src]="item.Image" (error)="updateImgSrc(index)">
-        <ion-card-content>
-            <div class="menu-content">
-                <button fab fab-right class="add-product">
-                    +
+        </ion-card>
+    </div>
+
+
+    <ion-toolbar class="bottom-footer" position="bottom" *ngIf="orders.length">
+        <div class="footer-wrapper">
+            <div class="order-size"> {{orders.length}} selected products </div>
+            <div>
+                <button primary clear  (click)="goToCart()" >
+                    Finalizeaza comanda
+                    <ion-icon name="send"></ion-icon>
+
                 </button>
 
-                <ion-card-title>{{item.Name}}</ion-card-title>
-                <p>{{item.desc}}</p>
-
-
-                <ion-item>
-                    <span item-left>{{item.Price}}</span>
-                    <span item-left>Lei</span>
-                    <button primary clear item-right (click)="toggleDescription(index)">
-                        <ion-icon [name]="item.descIcon"></ion-icon>
-                        Show more
-                    </button>
-                </ion-item>
             </div>
-        </ion-card-content>
-
-    </ion-card>
+        </div>
+    </ion-toolbar>
 
 </ion-content>

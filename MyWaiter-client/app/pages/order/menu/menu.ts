@@ -1,5 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {Order} from '../../../servises/backand/Order';
+import {Cart} from '../cart/cart';
 
 
 @Page({
@@ -11,13 +12,17 @@ export class Menu {
 
     private restaurantId:string;
     private tableNr:string;
-
     public menu:any;
 
+    public orders:any = [];
 
     constructor(private nav:NavController, navParams:NavParams, private order:Order) {
         this.restaurantId = navParams.get("restaurantId");
         this.tableNr = navParams.get("tableNr");
+
+        if(navParams.get("orders")) {
+            this.orders = navParams.get("orders");
+        };
 
 
         this.menu = [];
@@ -62,8 +67,20 @@ export class Menu {
             this.menu[index].desc = this.menu[index].Description;
             this.menu[index].descIcon = "chevron-up";
         }
+    }
 
+    addOrder(product) {
+        console.log(product);
+        this.orders.push(product);
+    }
 
+    goToCart(){
+        
+        this.nav.push(Cart, {
+            orders: this.orders,
+            restaurantId: this.restaurantId,
+            tableNr: this.tableNr,
+        });
     }
 
     logError(err) {

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../MyWaiter-client/.idea/MyWaiter-client.iml" filepath="$PROJECT_DIR$/../MyWaiter-client/.idea/MyWaiter-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyWaiter-client.iml" filepath="$PROJECT_DIR$/.idea/MyWaiter-client.iml" />
     </modules>
   </component>
 </project>
