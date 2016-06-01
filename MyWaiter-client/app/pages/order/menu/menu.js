@@ -12,6 +12,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ionic_angular_1 = require('ionic-angular');
 var Order_1 = require('../../../servises/backand/Order');
 var cart_1 = require('../cart/cart');
+var tables_1 = require('../tables/tables');
 var Menu = (function () {
     function Menu(nav, navParams, order) {
         this.nav = nav;
@@ -62,6 +63,11 @@ var Menu = (function () {
             orders: this.orders,
             restaurantId: this.restaurantId,
             tableNr: this.tableNr,
+        });
+    };
+    Menu.prototype.goBack = function () {
+        this.nav.push(tables_1.Tables, {
+            restaurantId: this.restaurantId,
         });
     };
     Menu.prototype.logError = function (err) {

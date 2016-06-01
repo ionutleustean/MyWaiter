@@ -1,6 +1,7 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {Order} from '../../../servises/backand/Order';
 import {Cart} from '../cart/cart';
+import {Tables} from '../tables/tables';
 
 
 @Page({
@@ -80,6 +81,12 @@ export class Menu {
             orders: this.orders,
             restaurantId: this.restaurantId,
             tableNr: this.tableNr,
+        });
+    }
+
+    goBack(){
+        this.nav.push(Tables, {
+            restaurantId: this.restaurantId,
         });
     }
 

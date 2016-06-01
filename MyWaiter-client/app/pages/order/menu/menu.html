@@ -1,4 +1,7 @@
-<ion-navbar *navbar primary>
+<ion-navbar *navbar primary hideBackButton>
+    <button menuToggle (click)="goBack()">
+        <ion-icon name="arrow-round-back"></ion-icon>
+    </button>
     <ion-title>Alege Produsul</ion-title>
 </ion-navbar>
 
