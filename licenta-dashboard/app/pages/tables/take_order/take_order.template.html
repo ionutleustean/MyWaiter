@@ -1,0 +1,19 @@
+
+<div class="list-group" *ngIf="!orderPage.value">
+    <button type="button" class="list-group-item" *ngFor="let order of tableOrder; let i = index"
+            (click)="goToOrder(order)">
+        Order {{i + 1}}
+    </button>
+</div>
+
+<div *ngIf="orderPage.value">
+    <button type="button" class="list-group-item" *ngFor="let product of orderProducts; let i = index">
+
+        {{product.Name}}
+        {{product.Price}}
+        
+    </button>
+
+</div>
+
+  

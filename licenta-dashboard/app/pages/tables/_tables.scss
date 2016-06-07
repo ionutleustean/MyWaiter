@@ -16,7 +16,8 @@ page-tables {
     .tables-container {
         height: 100%;
         width: 100%;
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
 
         .table-card:hover{
             background: $primary;

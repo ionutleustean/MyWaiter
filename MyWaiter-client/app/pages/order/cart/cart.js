@@ -14,6 +14,7 @@ var Order_1 = require('../../../servises/backand/Order');
 var menu_1 = require('../menu/menu');
 var Cart = (function () {
     function Cart(nav, navParams, order) {
+        var _this = this;
         this.nav = nav;
         this.order = order;
         this.orders = [];
@@ -21,6 +22,8 @@ var Cart = (function () {
         this.restaurantId = navParams.get("restaurantId");
         this.tableNr = navParams.get("tableNr");
         this.orders = navParams.get("orders");
+        order.getRestaurantById(this.restaurantId)
+            .subscribe(function (data) { return _this.restaurant = data; });
         this.calculateTotal();
     }
     Cart.prototype.calculateTotal = function () {
@@ -32,6 +35,13 @@ var Cart = (function () {
     Cart.prototype.removeProductFromCart = function (index) {
         this.orders.splice(index, 1);
         this.calculateTotal();
+    };
+    Cart.prototype.addOrder = function () {
+        console.log(this.restaurant);
+        this.order.addOrder(this.restaurant.UserMail, this.tableNr, this.orders)
+            .subscribe();
+        this.order.sendNotification(this.restaurant.UserMail, this.tableNr)
+            .subscribe();
     };
     Cart.prototype.goBack = function () {
         this.nav.push(menu_1.Menu, {

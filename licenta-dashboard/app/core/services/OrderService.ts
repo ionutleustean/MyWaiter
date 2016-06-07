@@ -41,7 +41,7 @@ export class OrderService {
 
     public getRestaurant() {
 
-        
+
         let email = Cookie.getCookie("user_email");
 
         let query = JSON.stringify([{"fieldName": "UserMail", "operator": "equals", "value": email}]);
@@ -49,25 +49,25 @@ export class OrderService {
         let header:Headers = new Headers();
 
         header.append('Authorization', Cookie.getCookie("Authorization"));
-        
+
         console.log(query);
 
         var $obs = this.http.get(ConfigBackand.api_url + "1/objects/Restaurants?filter=" + encodeURI(query), {
             headers: header
         });
 
-     
+
         return $obs;
     }
-    
-    public addTable(table: { TableNumber:string, Seats:string }) {
-        
+
+    public addTable(table:{ TableNumber:string, Seats:string }) {
+
         let query = {
-            RestaurantId : Cookie.getCookie("restaurant_id"),
-            Seats : table.Seats,
-            TableNumber : table.TableNumber
+            RestaurantId: Cookie.getCookie("restaurant_id"),
+            Seats: table.Seats,
+            TableNumber: table.TableNumber
         };
-        
+
         let header:Headers = new Headers();
 
         header.append('Content-Type', 'application/json');
@@ -79,13 +79,13 @@ export class OrderService {
         });
         return $obs;
     }
-    
+
     public getTable() {
-        
+
         let restaurantId = Cookie.getCookie("restaurant_id");
 
         let query = JSON.stringify([{"fieldName": "RestaurantId", "operator": "equals", "value": restaurantId}]);
-        
+
         let header:Headers = new Headers();
 
         header.append('Content-Type', 'application/json');
@@ -94,13 +94,13 @@ export class OrderService {
         var $obs = this.http.get(ConfigBackand.api_url + "1/objects/Tables?filter=" + encodeURI(query), {
             headers: header
         });
-        
+
         return $obs;
-        
+
     }
-    
+
     public deleteTable(id:string) {
-        
+
         let header:Headers = new Headers();
 
         header.append('Content-Type', 'application/json');
@@ -113,10 +113,10 @@ export class OrderService {
         return $obs;
     }
 
-    
+
     public editTable(id:string, table:{TableNumber:string, Seats:string}) {
-       
-       
+
+
         let header:Headers = new Headers();
 
         header.append('Content-Type', 'application/json');
@@ -125,12 +125,12 @@ export class OrderService {
         var $obs = this.http.put(ConfigBackand.api_url + "1/objects/Tables/" + encodeURI(id), JSON.stringify(table), {
             headers: header
         });
-        
+
         return $obs;
     }
 
-    public addProduct(product: ProductsModel) {
-        
+    public addProduct(product:ProductsModel) {
+
         product.RestaurantId = Cookie.getCookie("restaurant_id");
 
         let header:Headers = new Headers();
@@ -166,7 +166,7 @@ export class OrderService {
     }
 
     public editProduct(id:string, product:ProductsModel) {
-        
+
         let header:Headers = new Headers();
 
         header.append('Content-Type', 'application/json');
@@ -177,7 +177,7 @@ export class OrderService {
         });
 
         return $obs;
-        
+
     }
 
     public deleteProduct(id:string) {
@@ -192,6 +192,42 @@ export class OrderService {
         });
 
         return $obs;
+    }
+
+
+    public getOrders() {
+
+
+        let query = JSON.stringify([{"fieldName": "Processing", "operator": "equals", "value": false}]);
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.get(ConfigBackand.api_url + "1/objects/Order?filter=" + encodeURI(query), {
+            headers: header
+        })
+
+        return $obs;
+
+    }
+
+    public getOrderProducts(id) {
+        
+        let parameters = JSON.stringify({
+            id: id,
+        });
+        
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        return this.http.get(ConfigBackand.api_url + "1/query/data/getOrderProducts?parameters=" + encodeURI(parameters), {
+            headers: header
+        });
+        
     }
     
 }

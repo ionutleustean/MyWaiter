@@ -34,9 +34,9 @@
     <ion-toolbar class="bottom-footer" position="bottom" *ngIf="orders.length">
         <div>
             <div class="footer-wrapper">
-                <div class="total"> {{total}} Lei </div>
+                <div class="total"> {{total}} Lei</div>
 
-                <button primary clear>
+                <button primary clear (click)="addOrder()">
                     Trimite
                     <ion-icon name="send"></ion-icon>
 
@@ -46,3 +46,5 @@
     </ion-toolbar>
 
 </ion-content>
+
+

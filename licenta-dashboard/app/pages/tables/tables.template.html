@@ -22,20 +22,20 @@
             </md-dialog-actions>
         </form>
 
-    </md-dialog> 
-    
-    
+    </md-dialog>
+
+
     <md-dialog #edit_table_dialog (onClose)="editTable($event)">
 
         <h2> Edit table </h2>
         <form name="loinForm" class="add-table-form">
-            
+
             <section layout="row" layout-align="left center">
-                
+
                 <p> Table: {{edit_table.TableNumber}}</p>
-            
+
             </section>
-                
+
             <section layout="row" layout-align="center center">
                 <md-input placeholder="Seats" [(ngModel)]="edit_table.Seats" layout-fill></md-input>
             </section>
@@ -48,6 +48,22 @@
                 </button>
             </md-dialog-actions>
         </form>
+
+    </md-dialog>
+
+
+    <md-dialog #take_order_dialog (onClose)="takeOrder($event)">
+
+        <h2> Take order </h2>
+
+        <take-order [tableOrder]="tableOrder" [orderPage]="orderPage"></take-order>
+     
+
+        <md-dialog-actions>
+            <button md-button class="md-primary" (click)="take_order_dialog.close(false)">
+                <span>Cancel</span>
+            </button>
+        </md-dialog-actions>
 
     </md-dialog>
 
@@ -72,28 +88,36 @@
 
 
             <div class="table-container col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let table of allTables">
-                <md-card class="table-card" >
+                <md-card class="table-card">
 
                     <md-card-actions layout="row" layout-align="end center">
                         <button md-button>
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true" (click)="setTableForEdit(table); edit_table_dialog.show()" ></span>
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"
+                                  (click)="setTableForEdit(table); edit_table_dialog.show()"></span>
                         </button>
                         <button md-button>
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true" (click)="deleteTable(table.id)" ></span>
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"
+                                  (click)="deleteTable(table.id)"></span>
                         </button>
                     </md-card-actions>
 
-                    <md-card-content>
+                    <md-card-content (click)="getTableOrder(table.TableNumber); take_order_dialog.show()">
 
                         <div class="table-name"> {{table.TableNumber}}</div>
-                        <div class="table-free"> {{table.Seats}} locuri disponibile</div>
+                        <div class="table-free">
+                            {{table.Seats}} locuri disponibile
+
+                            <span *ngIf="table.alert" class="badge"> {{table.alert}} </span>
+
+                        </div>
+
 
                     </md-card-content>
 
                 </md-card>
             </div>
 
-      
+
         </div>
 
     </md-content>

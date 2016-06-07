@@ -9,3 +9,5 @@ export interface RestaurantModel {
     rating:string;
     shortDescription:string;
 }
+
+

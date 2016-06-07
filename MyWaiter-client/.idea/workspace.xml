@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f9e784-4059-48b3-a700-25ac4ca5c310" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/core/services/SocketService.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/_take_order.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/take_order.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/take_order.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Leustean_Ionut_[Licenta-2016].pages" afterPath="$PROJECT_DIR$/../Leustean_Ionut_[Licenta-2016].pages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/order/menu/menu.html" afterPath="$PROJECT_DIR$/app/pages/order/menu/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/order/menu/menu.js" afterPath="$PROJECT_DIR$/app/pages/order/menu/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/order/menu/menu.ts" afterPath="$PROJECT_DIR$/app/pages/order/menu/menu.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/RestaurantModel.ts" afterPath="$PROJECT_DIR$/app/model/RestaurantModel.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/order/cart/cart.html" afterPath="$PROJECT_DIR$/app/pages/order/cart/cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/order/cart/cart.js" afterPath="$PROJECT_DIR$/app/pages/order/cart/cart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/order/cart/cart.ts" afterPath="$PROJECT_DIR$/app/pages/order/cart/cart.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/servises/backand/Order.js" afterPath="$PROJECT_DIR$/app/servises/backand/Order.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/servises/backand/Order.ts" afterPath="$PROJECT_DIR$/app/servises/backand/Order.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../licenta-dashboard/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/core/services/OrderService.ts" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/core/services/OrderService.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/index.html" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/home/home.template.html" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/home/home.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/home/home.ts" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/home/home.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/_tables.scss" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.template.html" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.ts" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/package.json" afterPath="$PROJECT_DIR$/../licenta-dashboard/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/typings.json" afterPath="$PROJECT_DIR$/../licenta-dashboard/typings.json" />
     </list>
     <ignored path="licenta-ts-ionic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,14 +43,14 @@
     <favorites_list name="licenta-ts-ionic" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.67085576">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="menu.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/pages/order/menu/menu.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="520">
-                  <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+                <state relative-caret-position="1035">
+                  <caret line="72" column="12" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#61#0" expanded="true" />
                   </folding>
@@ -40,12 +58,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cart.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.html">
+          <file leaf-file-name="Order.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/servises/backand/Order.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="-49">
+                  <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="94" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#66#82#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -53,11 +73,21 @@
           <file leaf-file-name="cart.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="48" selection-end-column="5" />
+                <state relative-caret-position="625">
+                  <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#61#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="695">
+                  <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -69,8 +99,8 @@
           <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/pages/order/menu/menu.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+                <state relative-caret-position="375">
+                  <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -109,7 +139,6 @@
         <option value="$PROJECT_DIR$/app/pages/user/register/register.html" />
         <option value="$PROJECT_DIR$/app/pages/user/logIn/logIn.html" />
         <option value="$PROJECT_DIR$/app/model/RestaurantsModel.ts" />
-        <option value="$PROJECT_DIR$/app/model/RestaurantModel.ts" />
         <option value="$PROJECT_DIR$/app/pages/order/restaurants/restaurants.js" />
         <option value="$PROJECT_DIR$/app/servises/Backand.ts" />
         <option value="$PROJECT_DIR$/app/pages/order/tables/tables.js" />
@@ -134,17 +163,18 @@
         <option value="$PROJECT_DIR$/app/app.ts" />
         <option value="$PROJECT_DIR$/app/servises/vars/ConfigBackand.ts" />
         <option value="$PROJECT_DIR$/app/pages/order/restaurants/restaurants.html" />
-        <option value="$PROJECT_DIR$/app/servises/backand/Order.ts" />
         <option value="$PROJECT_DIR$/www/build/pages/order/menu/menu.css" />
         <option value="$PROJECT_DIR$/app/pages/order/menu/menu.scss" />
         <option value="$PROJECT_DIR$/app/pages/order/cart/menu.js" />
         <option value="$PROJECT_DIR$/app/pages/order/cart/cart.scss" />
+        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.html" />
+        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.html" />
+        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.ts" />
+        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.ts" />
+        <option value="$PROJECT_DIR$/app/model/RestaurantModel.ts" />
+        <option value="$PROJECT_DIR$/app/servises/backand/Order.ts" />
         <option value="$PROJECT_DIR$/app/pages/order/cart/cart.html" />
         <option value="$PROJECT_DIR$/app/pages/order/cart/cart.ts" />
-        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.ts" />
-        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.ts" />
-        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.html" />
-        <option value="$PROJECT_DIR$/app/pages/order/menu/menu.html" />
       </list>
     </option>
   </component>
@@ -261,7 +291,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -417,8 +446,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyWaiter-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyWaiter-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,7 +499,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="693" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="SearchEverywhereHistoryKey" value="cart.css&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/MyWaiter-client/www/build/pages/order/cart/cart.css&#10;menu.css&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/MyWaiter-client/www/build/pages/order/menu/menu.css&#10;menu&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-ts-ionic/app/pages/order/menu/menu.ts&#10;restaura&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-ts-ionic/app/pages/order/restaurants/restaurants.html&#10;home&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-ts-ionic/app/pages/homePage/homePage.ts" />
+    <property name="SearchEverywhereHistoryKey" value="Order&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/MyWaiter-client/app/servises/backand/Order.ts&#10;cart.css&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/MyWaiter-client/www/build/pages/order/cart/cart.css&#10;menu.css&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/MyWaiter-client/www/build/pages/order/menu/menu.css&#10;menu&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-ts-ionic/app/pages/order/menu/menu.ts&#10;restaura&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-ts-ionic/app/pages/order/restaurants/restaurants.html&#10;home&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-ts-ionic/app/pages/homePage/homePage.ts" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
@@ -571,7 +619,11 @@
       <workItem from="1464571184676" duration="1392000" />
       <workItem from="1464734996046" duration="1493000" />
       <workItem from="1464737330287" duration="5533000" />
-      <workItem from="1464819981005" duration="1492000" />
+      <workItem from="1464819981005" duration="1505000" />
+      <workItem from="1464853349284" duration="694000" />
+      <workItem from="1464877312237" duration="15454000" />
+      <workItem from="1465143657576" duration="7991000" />
+      <workItem from="1465326414239" duration="2618000" />
     </task>
     <task id="LOCAL-00001" summary="adjust gulpfile">
       <created>1462709462818</created>
@@ -706,11 +758,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464819997375</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixing back button">
+      <created>1464824829476</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1464824829476</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110466000" />
+    <option name="totallyTimeSpent" value="137236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,18 +781,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-186" width="1920" height="1200" extended-state="0" />
-    <editor active="false" />
+    <frame x="1440" y="-186" width="1920" height="1200" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14483494" sideWeight="0.41553134" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11235357" sideWeight="0.43779904" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14483494" sideWeight="0.58446866" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11235357" sideWeight="0.56220096" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.49574015" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32699275" sideWeight="0.48296058" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.51916933" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789856" sideWeight="0.48083067" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33514494" sideWeight="0.44675186" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24275362" sideWeight="0.44675186" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -779,20 +838,16 @@
     <MESSAGE value="removing useless pages" />
     <MESSAGE value="cart page" />
     <MESSAGE value="paper file - update" />
-    <option name="LAST_COMMIT_MESSAGE" value="paper file - update" />
+    <MESSAGE value="fixing back button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing back button" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/ionic-native/dist/plugins/imagepicker.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ionic-native/dist/plugins/deviceaccounts.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -826,13 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="15" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/angular2/src/http/http.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="77" column="49" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1004,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/RestaurantModel.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/servises/backand/Example.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1022,14 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
           <caret line="64" column="56" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/servises/backand/Order.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/order/restaurants/restaurants.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -1110,39 +1136,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.ts">
+    <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/order/menu/menu.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="268">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/order/menu/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        <state relative-caret-position="375">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/RestaurantModel.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rxjs/Observable.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/angular2/src/http/http.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/order/menu/menu.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="695">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/order/cart/cart.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/servises/backand/Order.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="94" selection-end-column="11" />
+          <folding>
+            <element signature="e#66#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
