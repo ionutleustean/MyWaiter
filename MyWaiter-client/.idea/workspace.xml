@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f9e784-4059-48b3-a700-25ac4ca5c310" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Leustean_Ionut_[Licenta-2016].pages" afterPath="$PROJECT_DIR$/../Leustean_Ionut_[Licenta-2016].pages" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/components/ChartTabel/_dashboard.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/components/ChartTabel/dashboard.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/components/ChartTabel/dashboard.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../licenta-dashboard/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/core/services/OrderService.ts" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/core/services/OrderService.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/_tables.scss" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/_tables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.template.html" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.ts" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/tables.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/_take_order.scss" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/_take_order.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/take_order.template.html" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/take_order.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/take_order.ts" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/tables/take_order/take_order.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/styles/base/_variables.scss" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/styles/base/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/styles/base/custom_dialog.scss" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/styles/base/custom_dialog.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/index.html" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/dashboard/_dashboard.scss" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/dashboard/_dashboard.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/dashboard/dashboard.template.html" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/dashboard/dashboard.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/pages/dashboard/dashboard.ts" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/pages/dashboard/dashboard.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/app/styles/main.scss" afterPath="$PROJECT_DIR$/../licenta-dashboard/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../licenta-dashboard/package.json" afterPath="$PROJECT_DIR$/../licenta-dashboard/package.json" />
     </list>
     <ignored path="licenta-ts-ionic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -776,7 +772,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-186" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11448349" sideWeight="0.44802868" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

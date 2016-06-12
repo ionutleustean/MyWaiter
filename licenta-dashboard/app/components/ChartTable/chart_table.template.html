@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+<div> {{title}} </div>
+
+<md-tabs md-dynamic-height md-border-bottom>
+    <template md-tab label="Chart">
+        <md-content class="md-padding">
+            <base-chart class="chart"
+                        [datasets]="data"
+                        [labels]="labels"
+                        [options]="options"
+                        [legend]="legend"
+                        [chartType]="type"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></base-chart>
+        </md-content>
+    </template>
+    <template md-tab label="Table">
+        <md-content class="md-padding">
+            
+            <div class="row" *ngFor="let item of data[0].data; let i = index" > 
+                
+                <div class="col-xs-6">
+                   <strong> {{labels[i]}} </strong>
+                </div>
+                
+                <div class="col-xs-6">
+                    {{item}}
+                </div>
+            
+            
+            </div>
+            
+        </md-content>
+    </template>
+</md-tabs>

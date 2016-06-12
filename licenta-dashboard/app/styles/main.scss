@@ -19,6 +19,7 @@
 @import "layout/_theme";
 @import "layout/_print";
 // Components
+@import "../components/ChartTable/_chart_table";
 
 @import "../../node_modules/ng2-material/all";
 
@@ -31,5 +32,6 @@
 @import "../pages/user/login/_login";
 @import "../pages/user/register/_register";
 @import "../pages/user/reset-password/reset-password";
+@import "../pages/dashboard/_dashboard";
 
 
