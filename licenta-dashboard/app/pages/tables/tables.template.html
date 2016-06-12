@@ -2,7 +2,7 @@
 
     <md-dialog #add_table_dialog (onClose)="addTable($event)">
 
-        <h2> Add table </h2>
+        <h2 class="modal-title"> Add table </h2>
         <form name="loinForm" class="add-table-form">
 
             <section layout="row" layout-align="center center">
@@ -27,7 +27,7 @@
 
     <md-dialog #edit_table_dialog (onClose)="editTable($event)">
 
-        <h2> Edit table </h2>
+        <h2 class="modal-title"> Edit table </h2>
         <form name="loinForm" class="add-table-form">
 
             <section layout="row" layout-align="left center">
@@ -54,9 +54,9 @@
 
     <md-dialog #take_order_dialog (onClose)="takeOrder($event)">
 
-        <h2> Take order </h2>
+        <h2 class="modal-title"> Take order </h2>
 
-        <take-order [tableOrder]="tableOrder" [orderPage]="orderPage"></take-order>
+        <take-order [tableOrder]="tableOrder" [orderPage]="orderPage" ></take-order>
      
 
         <md-dialog-actions>

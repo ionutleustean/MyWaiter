@@ -35,6 +35,12 @@ page-tables {
         .table-container {
             padding: 0px;
             
+            .badge{
+                background: $red;
+                float: right;
+                padding: 5px 7px;
+            }
+            
             .table-name {
                 width: 100%;
                 line-height: 100px;

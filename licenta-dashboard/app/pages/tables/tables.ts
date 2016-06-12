@@ -152,20 +152,16 @@ export class Tables {
 
     takeOrder(flag:boolean) {
 
-        console.log(this.orderPage);
-
-
         this.orderPage = {value: false};
-
-        console.log(this.orderPage);
-
-
+        
         if (flag) {
 
 
         } else {
 
         }
+        this.getTable();
+
     }
 
     getTableOrder(tableNumber) {
@@ -192,8 +188,11 @@ export class Tables {
                     console.log(data.json().data);
                     this.order = data.json().data;
 
+                    for (let i = 0; i < this.allTables.length; i++) {
+                        this.allTables[i].alert=0;
+                    }
 
-                    //FixMe: this is shit
+                        //FixMe: this is shit
                     for (let j = 0; j < this.order.length; j++) {
                         for (let i = 0; i < this.allTables.length; i++) {
                             if (this.order[j].TableNumber == this.allTables[i].TableNumber) {

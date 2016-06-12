@@ -198,7 +198,7 @@ export class OrderService {
     public getOrders() {
 
 
-        let query = JSON.stringify([{"fieldName": "Processing", "operator": "equals", "value": false}]);
+        let query = JSON.stringify([{"fieldName": "Done", "operator": "equals", "value": false}]);
 
         let header:Headers = new Headers();
 
@@ -228,6 +228,38 @@ export class OrderService {
             headers: header
         });
         
+    }
+
+    
+
+    public processOrder(id:string) {
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.put(ConfigBackand.api_url + "1/objects/Order/" + encodeURI(id), JSON.stringify({"Processing": "true"}), {
+            headers: header
+        });
+
+        return $obs;
+
+    }   
+    
+    public finishOrder(id:string) {
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+
+        var $obs = this.http.put(ConfigBackand.api_url + "1/objects/Order/" + encodeURI(id), JSON.stringify({"Done": "true"}), {
+            headers: header
+        });
+
+        return $obs;
+
     }
     
 }

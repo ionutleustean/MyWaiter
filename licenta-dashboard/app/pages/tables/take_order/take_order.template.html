@@ -1,19 +1,51 @@
+<div class="take-order">
+    <div class="list-group" *ngIf="!orderPage.value">
+        <button type="button" class="list-group-item order-button" [ngClass]="{active: order.Processing}"
+                *ngFor="let order of tableOrder; let i = index"
+                (click)="goToOrder(order)">
 
-<div class="list-group" *ngIf="!orderPage.value">
-    <button type="button" class="list-group-item" *ngFor="let order of tableOrder; let i = index"
-            (click)="goToOrder(order)">
-        Order {{i + 1}}
-    </button>
+
+            <span> Order {{i + 1}} </span>
+            <span> 
+                <span *ngIf="!order.Processing"> 
+                    New
+                </span>
+                
+                <span *ngIf="order.Processing"> 
+                    Processed
+                </span>
+            
+            </span>
+
+
+        </button>
+    </div>
+
+    <div *ngIf="orderPage.value">
+        <button type="button" class="list-group-item order-details" *ngFor="let product of orderProducts; let i = index">
+
+            <span>{{product.Name}}</span>
+            <span>{{product.Price}}</span>
+
+        </button>
+
+
+        <div>
+
+            <button md-button class="md-primary" (click)="setOrderPage(false)">
+                <span>Back</span>
+            </button>
+
+            <button *ngIf="!selectedOrder.Processing" md-button class="md-primary" (click)="processOrder()">
+                <span>Process order</span>
+            </button>
+
+            <button *ngIf="selectedOrder.Processing" md-button class="md-primary" (click)="finishOrder()">
+                <span>Finish order</span>
+            </button>
+        </div>
+
+    </div>
+
+
 </div>
-
-<div *ngIf="orderPage.value">
-    <button type="button" class="list-group-item" *ngFor="let product of orderProducts; let i = index">
-
-        {{product.Name}}
-        {{product.Price}}
-        
-    </button>
-
-</div>
-
-  
