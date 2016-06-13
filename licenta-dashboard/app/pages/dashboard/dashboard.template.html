@@ -1,14 +1,15 @@
 <div class="content">
 
     <md-content layout-margin="flex-md">
-        
 
-        <div class="row"> 
-        
+
+        <div class="row">
+
             <div class="col-xs-6">
                 <md-card>
                     <md-card-content>
-                        <chart-table [title]="'Products ratings'" [type]="'bar'" [labels]="barChartLabels" [data]="barChartData"> </chart-table>
+                        <chart-table [title]="'Products ratings'" [type]="'bar'" [labels]="products.productLabel"
+                                     [data]="products.productData" [colors]="barChartColours"></chart-table>
                     </md-card-content>
                 </md-card>
             </div>
@@ -16,19 +17,23 @@
             <div class="col-xs-6">
                 <md-card>
                     <md-card-content>
-                        <chart-table [title]="'Products Popularity'" [type]="'doughnut'" [labels]="barChartLabels" [data]="barChartData"> </chart-table>
+                        <chart-table [title]="'Products Popularity'" [type]="'line'"
+                                     [labels]="productsOrderCount.productLabel" [data]="productsOrderCount.productData"
+                                     [colors]="lineChartColours"></chart-table>
                     </md-card-content>
                 </md-card>
             </div>
-        
+
         </div>
 
         <div class="row">
-            
+
             <div class="col-xs-12">
                 <md-card>
                     <md-card-content>
-                        <chart-table [title]="'Tables Popularity'" [type]="'line'" [labels]="barChartLabels" [data]="barChartData"> </chart-table>
+                        <chart-table [title]="'Tables Popularity'" [type]="'bar'"
+                                     [labels]="tableOrderCount.productLabel" [data]="tableOrderCount.productData"
+                                     [colors]="barChartColours"></chart-table>
                     </md-card-content>
                 </md-card>
             </div>

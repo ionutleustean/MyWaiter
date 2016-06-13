@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab339eb7-747c-469f-881a-1537048e181d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/ChartTable/_chart_table.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/ChartTable/chart_table.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyWaiter-client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../MyWaiter-client/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/core/model/Dashboard/Products.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/core/model/Dashboard/ProductsOrderCount.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/core/model/Dashboard/TableOrderCount.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/ChartTable/_chart_table.scss" afterPath="$PROJECT_DIR$/app/components/ChartTable/_chart_table.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html" afterPath="$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/ChartTable/chart_table.ts" afterPath="$PROJECT_DIR$/app/components/ChartTable/chart_table.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/core/services/OrderService.ts" afterPath="$PROJECT_DIR$/app/core/services/OrderService.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/dashboard/_dashboard.scss" afterPath="$PROJECT_DIR$/app/pages/dashboard/_dashboard.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/dashboard/dashboard.template.html" afterPath="$PROJECT_DIR$/app/pages/dashboard/dashboard.template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/dashboard/dashboard.ts" afterPath="$PROJECT_DIR$/app/pages/dashboard/dashboard.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
     </list>
     <ignored path="licenta-dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,92 +32,7 @@
     <favorites_list name="licenta-dashboard" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/dashboard/dashboard.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="23" />
-              <folding>
-                <element signature="e#15#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_chart_table.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/ChartTable/_chart_table.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chart_table.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/ChartTable/chart_table.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="26" />
-              <folding>
-                <element signature="e#15#91#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chart_table.template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/dashboard/dashboard.template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="130" selection-start-line="30" selection-start-column="130" selection-end-line="30" selection-end-column="130" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="take_order.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/tables/take_order/take_order.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_dashboard.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/dashboard/_dashboard.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,10 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/core/vars/ConfigBackand.ts" />
-        <option value="$PROJECT_DIR$/app/pages/user/reset-password/reset-password.ts" />
-        <option value="$PROJECT_DIR$/app/pages/user/settings/settings.ts" />
-        <option value="$PROJECT_DIR$/.tmp/core/app.js" />
         <option value="$PROJECT_DIR$/.tmp/core/boot.js" />
         <option value="$PROJECT_DIR$/.tmp/core/services/OrderService.js" />
         <option value="$PROJECT_DIR$/.tmp/core/services/UserService.js" />
@@ -165,7 +77,6 @@
         <option value="$PROJECT_DIR$/app/pages/home/home.template.html" />
         <option value="$PROJECT_DIR$/app/core/services/SocketService.ts" />
         <option value="$PROJECT_DIR$/app/pages/home/home.ts" />
-        <option value="$PROJECT_DIR$/app/core/services/OrderService.ts" />
         <option value="$PROJECT_DIR$/app/pages/tables/tables.ts" />
         <option value="$PROJECT_DIR$/app/pages/tables/take_order/take_order.ts" />
         <option value="$PROJECT_DIR$/app/styles/base/custom_dialog.scss" />
@@ -177,14 +88,19 @@
         <option value="/AngularJS Fragment (dashboard.template.html:1315).js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/pages/dashboard/_dashboard.scss" />
         <option value="$PROJECT_DIR$/app/components/ChartTabel/chart_table.template.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/app/pages/dashboard/dashboard.ts" />
         <option value="$PROJECT_DIR$/app/components/ChartTabel/chart_table.ts" />
-        <option value="$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html" />
-        <option value="$PROJECT_DIR$/app/pages/dashboard/dashboard.template.html" />
+        <option value="$PROJECT_DIR$/app/components/ChartTable/_chart_table.scss" />
+        <option value="$PROJECT_DIR$/app/pages/dashboard/_dashboard.scss" />
         <option value="$PROJECT_DIR$/app/components/ChartTable/chart_table.ts" />
+        <option value="$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html" />
+        <option value="$PROJECT_DIR$/app/core/services/OrderService.ts" />
+        <option value="$PROJECT_DIR$/app/pages/dashboard/dashboard.template.html" />
+        <option value="$PROJECT_DIR$/app/core/model/Dashboard/ProductsOrderCount.ts" />
+        <option value="$PROJECT_DIR$/app/core/model/Dashboard/Products.ts" />
+        <option value="$PROJECT_DIR$/app/core/model/Dashboard/TableOrderCount.ts" />
+        <option value="$PROJECT_DIR$/app/pages/dashboard/dashboard.ts" />
       </list>
     </option>
   </component>
@@ -473,11 +389,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="take_order" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,11 +407,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="products" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,11 +425,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,11 +447,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ChartTable" />
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dashboard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,7 +482,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
-    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/styles/main.scss&#10;pa&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/package.json&#10;index&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/index.html&#10;dashb&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/dashboard/dashboard.template.html&#10;dash&#9;null&#9;null&#10;_table&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/tables/_tables.scss&#10;tab&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/tables/_tables.scss&#10;products&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/_products.scss&#10;home&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/home.template.html&#10;order&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/services/OrderService.ts&#10;_pro&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/_products.scss&#10;register&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/register.ts&#10;register.ts&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/register.ts&#10;mai&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/styles/main.scss&#10;_produc&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/_products.scss&#10;login&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/login/login.template.html&#10;_home&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/_home.scss&#10;_tab&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/tables/_tables.scss&#10;produc&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/products.ts&#10;products.t&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/products.template.html&#10;_h&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/_home.scss&#10;app&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/app.template.html&#10;home.te&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/home.template.html&#10;User&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/.tmp/core/services/UserService.js&#10;hom&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/home.ts&#10;boot&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/boot.ts&#10;Orde&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/services/OrderService.ts&#10;Order&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/.tmp/core/services/OrderService.js&#10;inde&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/index.html&#10;boo&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/boot.ts&#10;App&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/.tmp/core/app.js&#10;register.t&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/register.template.html&#10;login.&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/login/login.template.html&#10;_register&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/_register.scss&#10;vendor&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/styles/vendor.scss" />
+    <property name="SearchEverywhereHistoryKey" value="chart&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/components/ChartTable/chart_table.template.html&#10;Chart&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/components/ChartTable/chart_table.ts&#10;Products&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/products.ts&#10;gul&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/gulpfile.babel.js&#10;main&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/styles/main.scss&#10;pa&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/package.json&#10;index&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/index.html&#10;dashb&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/dashboard/dashboard.template.html&#10;dash&#9;null&#9;null&#10;_table&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/tables/_tables.scss&#10;tab&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/tables/_tables.scss&#10;products&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/_products.scss&#10;home&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/home.template.html&#10;order&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/services/OrderService.ts&#10;_pro&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/_products.scss&#10;register&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/register.ts&#10;register.ts&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/register.ts&#10;mai&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/styles/main.scss&#10;_produc&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/_products.scss&#10;login&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/login/login.template.html&#10;_home&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/_home.scss&#10;_tab&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/tables/_tables.scss&#10;produc&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/products.ts&#10;products.t&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/products/products.template.html&#10;_h&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/_home.scss&#10;app&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/app.template.html&#10;home.te&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/home.template.html&#10;User&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/.tmp/core/services/UserService.js&#10;hom&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/home/home.ts&#10;boot&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/boot.ts&#10;Orde&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/services/OrderService.ts&#10;Order&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/.tmp/core/services/OrderService.js&#10;inde&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/index.html&#10;boo&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/core/boot.ts&#10;App&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/.tmp/core/app.js&#10;register.t&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/register.template.html&#10;login.&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/login/login.template.html&#10;_register&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/pages/user/register/_register.scss&#10;vendor&#9;FILE&#9;file:///Users/Ionut/WebstormProjects/licenta/licenta-dashboard/app/styles/vendor.scss" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="editorconfig.notification" value="spaces" />
@@ -593,11 +505,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/core/model/Dashboard" />
       <recent name="$PROJECT_DIR$/app/components/ChartTabel" />
       <recent name="$PROJECT_DIR$/app/pages/tables/take-order" />
       <recent name="$PROJECT_DIR$/app/pages" />
       <recent name="$PROJECT_DIR$/app/pages/tables" />
-      <recent name="$PROJECT_DIR$/app/pages/dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/core/services/cookie" />
@@ -706,7 +618,7 @@
       <workItem from="1464881693641" duration="41000" />
       <workItem from="1465155663514" duration="21926000" />
       <workItem from="1465307707358" duration="16192000" />
-      <workItem from="1465409646837" duration="14656000" />
+      <workItem from="1465409646837" duration="27796000" />
     </task>
     <task id="LOCAL-00001" summary="login template">
       <created>1463248818220</created>
@@ -813,11 +725,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465738549708</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ChartTable component">
+      <created>1465750484408</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1465750484408</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245696000" />
+    <option name="totallyTimeSpent" value="258836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -830,23 +749,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-186" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.49361023" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789856" sideWeight="0.4685836" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.5063898" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14802982" sideWeight="0.5598504" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.5063898" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14802982" sideWeight="0.5598504" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.49361023" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27355072" sideWeight="0.41533548" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25996378" sideWeight="0.5537806" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1517572" sideWeight="0.49614793" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25996378" sideWeight="0.5537806" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14802982" sideWeight="0.56234413" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14802982" sideWeight="0.44014964" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14802982" sideWeight="0.43765587" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -882,7 +801,8 @@
     <MESSAGE value="pipe - removing an error" />
     <MESSAGE value="render order details" />
     <MESSAGE value="take_order" />
-    <option name="LAST_COMMIT_MESSAGE" value="take_order" />
+    <MESSAGE value="ChartTable component" />
+    <option name="LAST_COMMIT_MESSAGE" value="ChartTable component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -891,34 +811,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/change_detection/pipe_transform.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/pipes/ProductSearchPipe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular2-material/core/live-announcer/live-announcer.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/typings/browser/ambient/socket.io-client/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/services/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angular2-material/input/input.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -942,29 +834,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/products/products.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#55#0" expanded="false" />
-            <element signature="n#!!block;n#getProducts#0;n#Products#0" expanded="false" />
-            <element signature="n#!!block;n#deleteProduct#0;n#Products#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/products/_products.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/model/ProductsModel.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1016,21 +889,6 @@
             <element signature="n#!!block;n#getNotification#0;n#Home#0" expanded="false" />
             <element signature="n#!!block;n#getRestaurant#0;n#Home#0" expanded="false" />
             <element signature="n#!!block;n#getOrders#0;n#Home#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/tables/tables.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="191" column="49" selection-start-line="191" selection-start-column="49" selection-end-line="191" selection-end-column="49" />
-          <folding>
-            <element signature="e#15#55#0" expanded="true" />
-            <element signature="n#!!block;n#addTable#0;n#Tables#0" expanded="false" />
-            <element signature="n#!!block;n#deleteTable#0;n#Tables#0" expanded="false" />
-            <element signature="n#!!block;n#setTableForEdit#0;n#Tables#0" expanded="false" />
-            <element signature="n#!!block;n#editTable#0;n#Tables#0" expanded="false" />
-            <element signature="n#!!block;n#takeOrder#0;n#Tables#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1107,16 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/services/OrderService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="926">
-          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#17#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/services/ImgurService.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1175,14 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ng2-charts/components/charts/charts.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1215,34 +1055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ng2-charts/ng2-charts.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/dashboard/_dashboard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/tables/take_order/take_order.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1265,34 +1081,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/ChartTable/_chart_table.scss">
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ng2-charts/components/charts/charts.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html">
+    <entry file="file://$PROJECT_DIR$/app/components/ChartTable/_chart_table.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/tables/tables.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="e#15#55#0" expanded="true" />
+            <element signature="n#!!block;n#addTable#0;n#Tables#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTable#0;n#Tables#0" expanded="false" />
+            <element signature="n#!!block;n#setTableForEdit#0;n#Tables#0" expanded="false" />
+            <element signature="n#!!block;n#editTable#0;n#Tables#0" expanded="false" />
+            <element signature="n#!!block;n#takeOrder#0;n#Tables#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/products/products.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!block;n#getProducts#0;n#Products#0" expanded="false" />
+            <element signature="n#!!block;n#deleteProduct#0;n#Products#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/tables/take_order/take_order.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/dashboard/_dashboard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/services/OrderService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="246" column="19" selection-start-line="246" selection-start-column="14" selection-end-line="246" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/model/Dashboard/TableOrderCount.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/dashboard/dashboard.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="130" selection-start-line="30" selection-start-column="130" selection-end-line="30" selection-end-column="130" />
+        <state relative-caret-position="285">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/dashboard/dashboard.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="240">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="e#15#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/model/Dashboard/ProductsOrderCount.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="e#15#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/model/Dashboard/Products.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
           <folding>
             <element signature="e#15#55#0" expanded="true" />
           </folding>
@@ -1301,11 +1207,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/ChartTable/chart_table.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="26" />
+        <state relative-caret-position="369">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
             <element signature="e#15#91#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/ChartTable/chart_table.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="19" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/model/ProductsModel.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -228,6 +228,34 @@ export class OrderService {
             headers: header
         });
         
+    }  
+    
+    public getProductsOrderCount() {
+        
+        
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+        
+        return this.http.get(ConfigBackand.api_url + "1/query/data/getProductsOrderCount" , {
+            headers: header
+        });
+        
+    }
+    
+    public getTableOrderCount() {
+        
+        
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+        
+        return this.http.get(ConfigBackand.api_url + "1/query/data/getOrderTableCount" , {
+            headers: header
+        });
+        
     }
 
     

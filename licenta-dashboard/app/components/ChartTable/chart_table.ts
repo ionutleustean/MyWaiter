@@ -23,6 +23,7 @@ export class ChartTable {
     @Input() title:string ;
     @Input() data:any[] ;
     @Input() labels:string[] ;
+    @Input() colors:string[] ;
 
 
 
@@ -31,11 +32,11 @@ export class ChartTable {
 
     public options:any = {
         scaleShowVerticalLines: true,
-        responsive: true
+        responsive: true,
+        legend: { display: false }
     };
-    public legend:boolean = true;
+    public legend:boolean = false;
 
- 
 
     // events
     public chartClicked(e:any):void {
