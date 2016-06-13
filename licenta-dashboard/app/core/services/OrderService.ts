@@ -39,6 +39,22 @@ export class OrderService {
 
     }
 
+    
+    public updateRestaurant(id, restaurant) {
+    
+    
+        let header:Headers = new Headers();
+    
+        header.append('Content-Type', 'application/json');
+        header.append('Authorization', Cookie.getCookie("Authorization"));
+    
+        var $obs = this.http.put(this.url + "Restaurants/" + encodeURI(id), JSON.stringify(restaurant), {
+            headers: header
+        });
+    
+        return $obs;
+    }
+
     public getRestaurant() {
 
 

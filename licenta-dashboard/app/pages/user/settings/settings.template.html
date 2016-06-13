@@ -2,48 +2,87 @@
 
     <md-content layout-margin="flex-md">
 
+        <md-card>
+
+            <md-card-content class="update-restaurant">
+
+                <md-card-title-text>
+                    <span class="md-headline">Restaurant Settings</span>
+                </md-card-title-text>
+
+                <form name="updateRestaurantForm" class="update-restaurant-form">
+
+                    <section layout="row" layout-align="center center">
+                        <md-input placeholder="Restaurant name" [(value)]="restaurant.Name" layout-fill></md-input>
+                    </section>
+
+                    <section layout="row" layout-align="center center">
+                        <md-input placeholder="Address" [(value)]="restaurant.Address" layout-fill></md-input>
+                    </section>
+
+                    <label class="custom-label">Short Description</label>
+                    <section layout="row" layout-align="center center">
+                        <md-input-container class="md-block" layout-fill>
+                    <textarea rows="4" cols="50" md-input [(ngModel)]="restaurant.ShortDescription">
+                    </textarea>
+                        </md-input-container>
+                    </section>
 
 
-        <!--<form name="resetForm" class="reset-form">-->
-            <!---->
-            <!--<section layout="row" layout-align="center center">-->
-                <!--<md-input-container class="md-block" layout-fill>-->
-                    <!--<label>New Password</label>-->
-                    <!--<input md-input type="password" [(value)]="password">-->
-                <!--</md-input-container>-->
-            <!--</section>-->
+                    <label class="custom-label">Description</label>
+                    <section layout="row" layout-align="center center">
+                        <md-input-container class="md-block" layout-fill>
+                    <textarea rows="4" cols="50" md-input [(ngModel)]="restaurant.Description">
+                    </textarea>
+                        </md-input-container>
+                    </section>
 
-            <!--<section layout="row" layout-align="center center">-->
-                <!--<button md-raised-button class="md-raised" layout-fill [routerLink]="['/Login']">Login</button>-->
-                <!--<button md-raised-button class="md-raised md-primary" layout-fill (click)="resetPassword()">Reset Password</button>-->
-            <!--</section>-->
-            <!---->
-        <!--</form>-->
+
+                    <label class="custom-label">Logo</label>
+                    <section layout="row" layout-align="center center">
+                        <md-input-container class="md-block" layout-fill>
+                            <input type="file" md-input (change)="handleUpload($event)">
+                        </md-input-container>
+                    </section>
+
+
+                    <section layout="row" layout-align="center center">
+                        <button md-raised-button class="md-raised md-primary" layout-fill (click)="updateUser()">Update
+                            Restaurant
+                        </button>
+                    </section>
+
+
+                </form>
+
+            </md-card-content>
+
+        </md-card>
+
 
         <md-card>
-            <md-card-title>
+
+            <md-card-content class="update-user">
+
                 <md-card-title-text>
                     <span class="md-headline">User Settings</span>
                 </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <p>
-                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
-                <p>
-                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
-                <p>
-                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
+
+                <form name="updateUserForm" class="update-user-form">
+                    
+                    <section layout="row" layout-align="left center">
+                        <md-input placeholder="Email" [(ngModel)]="user.name" ></md-input>
+
+                        <button md-raised-button class="md-raised md-primary" (click)="requestResetPassword(user.name)">Reset
+                            Password
+                        </button>
+                    </section>
+
+
+                </form>
+
             </md-card-content>
-            <md-card-actions layout="row" layout-align="end center">
-                <button md-button>Action 1</button>
-                <button md-button>Action 2</button>
-            </md-card-actions>
+
         </md-card>
 
     </md-content>
