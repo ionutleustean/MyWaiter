@@ -1,6 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {Order} from '../../../servises/backand/Order';
-import {Menu} from '../menu/menu';
+import {Confirmation} from '../confirmation/confirmation';
 
 
 @Page({
@@ -49,21 +49,31 @@ export class Cart {
 
     addOrder() {
         console.log(this.restaurant);
-        this.order.addOrder(this.restaurant.UserMail, this.tableNr, this.orders)
-            .subscribe();
 
-        this.order.sendNotification(this.restaurant.UserMail, this.tableNr)
-            .subscribe();
+        if(this.restaurant) {
+            this.order.addOrder(this.restaurant.UserMail, this.tableNr, this.orders)
+                .subscribe();
+
+            this.order.sendNotification(this.restaurant.UserMail, this.tableNr)
+                .subscribe();
+
+            this.nav.push(Confirmation, {
+                restaurantId: this.restaurantId,
+                tableNr: this.tableNr,
+            });
+
+        }
+        else{
+
+
+            setTimeout(
+                () => {
+                    this.addOrder();
+                }, 100);
+        }
+
+
     }
-
-    goBack() {
-        this.nav.push(Menu, {
-            orders: this.orders,
-            restaurantId: this.restaurantId,
-            tableNr: this.tableNr,
-        });
-    }
-
 
     logError(err) {
 

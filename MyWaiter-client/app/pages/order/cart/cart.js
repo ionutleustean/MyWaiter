@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var ionic_angular_1 = require('ionic-angular');
 var Order_1 = require('../../../servises/backand/Order');
-var menu_1 = require('../menu/menu');
+var confirmation_1 = require('../confirmation/confirmation');
 var Cart = (function () {
     function Cart(nav, navParams, order) {
         var _this = this;
@@ -37,18 +37,23 @@ var Cart = (function () {
         this.calculateTotal();
     };
     Cart.prototype.addOrder = function () {
+        var _this = this;
         console.log(this.restaurant);
-        this.order.addOrder(this.restaurant.UserMail, this.tableNr, this.orders)
-            .subscribe();
-        this.order.sendNotification(this.restaurant.UserMail, this.tableNr)
-            .subscribe();
-    };
-    Cart.prototype.goBack = function () {
-        this.nav.push(menu_1.Menu, {
-            orders: this.orders,
-            restaurantId: this.restaurantId,
-            tableNr: this.tableNr,
-        });
+        if (this.restaurant) {
+            this.order.addOrder(this.restaurant.UserMail, this.tableNr, this.orders)
+                .subscribe();
+            this.order.sendNotification(this.restaurant.UserMail, this.tableNr)
+                .subscribe();
+            this.nav.push(confirmation_1.Confirmation, {
+                restaurantId: this.restaurantId,
+                tableNr: this.tableNr,
+            });
+        }
+        else {
+            setTimeout(function () {
+                _this.addOrder();
+            }, 100);
+        }
     };
     Cart.prototype.logError = function (err) {
     };

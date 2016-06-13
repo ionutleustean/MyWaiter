@@ -84,12 +84,6 @@ export class Menu {
         });
     }
 
-    goBack(){
-        this.nav.push(Tables, {
-            restaurantId: this.restaurantId,
-        });
-    }
-
     logError(err) {
     }
 
