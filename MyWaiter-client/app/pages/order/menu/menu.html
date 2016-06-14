@@ -1,4 +1,4 @@
-<ion-navbar *navbar primary >
+<ion-navbar *navbar primary>
     <ion-title>Alege Produsul</ion-title>
 </ion-navbar>
 
@@ -15,12 +15,27 @@
                     </button>
 
                     <ion-card-title>{{item.Name}}</ion-card-title>
+
+                    <div class="like-container">
+                        <button primary clear (click)="toggleLike(index)">
+                            <!--<ion-icon name="thumbs-up"></ion-icon>-->
+                            <span *ngIf="!item.isLiked"> Like </span>
+                            <span *ngIf="item.isLiked"> Unlike </span>
+                        </button>
+
+                        <div class="liked-container">
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <p class="liked-number"> <strong> {{item.Rating}}</strong></p>
+                        </div>
+
+                    </div>
                     <p>{{item.desc}}</p>
 
 
                     <ion-item>
                         <span item-left>{{item.Price}}</span>
                         <span item-left>Lei</span>
+
                         <button primary clear item-right (click)="toggleDescription(index)">
                             <ion-icon [name]="item.descIcon"></ion-icon>
                             Show more
@@ -35,9 +50,9 @@
 
     <ion-toolbar class="bottom-footer" position="bottom" *ngIf="orders.length">
         <div class="footer-wrapper">
-            <div class="order-size"> {{orders.length}} selected products </div>
+            <div class="order-size"> {{orders.length}} selected products</div>
             <div>
-                <button primary clear  (click)="goToCart()" >
+                <button primary clear (click)="goToCart()">
                     Finalizeaza comanda
                     <ion-icon name="send"></ion-icon>
 

@@ -57,6 +57,15 @@ var Order = (function () {
         else {
         }
     };
+    Order.prototype.updateProduct = function (id, product) {
+        var header = new http_1.Headers();
+        header.append('Content-Type', 'application/json');
+        header.append('AnonymousToken', ConfigBackand_1.ConfigBackand.anonymous_token);
+        var $obs = this.http.put(ConfigBackand_1.ConfigBackand.api_url + '1/objects/Products/' + encodeURI(id), JSON.stringify(product), {
+            headers: header
+        });
+        return $obs;
+    };
     Order.prototype.getRestaurantById = function (RestaurantId) {
         var header = new http_1.Headers();
         header.append('Content-Type', 'application/json');

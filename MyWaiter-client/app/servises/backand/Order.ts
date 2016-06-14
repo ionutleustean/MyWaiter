@@ -72,6 +72,25 @@ export class Order {
     }
 
 
+
+    public updateProduct(id, product) {
+
+
+        let header:Headers = new Headers();
+
+        header.append('Content-Type', 'application/json');
+        header.append('AnonymousToken', ConfigBackand.anonymous_token);
+
+        var $obs = this.http.put(ConfigBackand.api_url + '1/objects/Products/' + encodeURI(id), JSON.stringify(product), {
+            headers: header
+        });
+
+        return $obs;
+    }
+
+
+
+
     public getRestaurantById(RestaurantId:string) {
 
         let header:Headers = new Headers();

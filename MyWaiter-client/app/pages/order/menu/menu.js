@@ -35,6 +35,10 @@ var Menu = (function () {
                 _this.menu[i].desc = data[i].ShortDescription;
                 _this.menu[i].descIcon = "chevron-down";
                 _this.menu[i].descVisibility = false;
+                _this.menu[i].isLiked = false;
+                if (!_this.menu[i].Rating) {
+                    _this.menu[i].Rating = 0;
+                }
             }
         }, function (err) { return _this.logError(err); });
     };
@@ -52,6 +56,16 @@ var Menu = (function () {
             this.menu[index].desc = this.menu[index].Description;
             this.menu[index].descIcon = "chevron-up";
         }
+    };
+    Menu.prototype.toggleLike = function (index) {
+        if (this.menu[index].isLiked) {
+            this.menu[index].Rating--;
+        }
+        else {
+            this.menu[index].Rating++;
+        }
+        this.order.updateProduct(this.menu[index].id, this.menu[index]).subscribe();
+        this.menu[index].isLiked = !this.menu[index].isLiked;
     };
     Menu.prototype.addOrder = function (product) {
         console.log(product);

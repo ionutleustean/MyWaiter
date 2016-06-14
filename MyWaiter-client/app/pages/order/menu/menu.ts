@@ -42,6 +42,10 @@ export class Menu {
                         this.menu[i].desc = data[i].ShortDescription;
                         this.menu[i].descIcon = "chevron-down";
                         this.menu[i].descVisibility = false;
+                        this.menu[i].isLiked = false;
+                        if(!this.menu[i].Rating){
+                            this.menu[i].Rating = 0;
+                        }
                     }
                 },
                 err => this.logError(err)
@@ -68,6 +72,23 @@ export class Menu {
             this.menu[index].desc = this.menu[index].Description;
             this.menu[index].descIcon = "chevron-up";
         }
+
+    }
+
+
+    toggleLike(index){
+
+        if(this.menu[index].isLiked){
+            this.menu[index].Rating--;
+        }
+        else {
+            this.menu[index].Rating++;
+        }
+
+        this.order.updateProduct(this.menu[index].id, this.menu[index]).subscribe();
+
+        this.menu[index].isLiked = !this.menu[index].isLiked;
+
     }
 
     addOrder(product) {
