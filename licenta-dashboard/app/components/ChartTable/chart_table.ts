@@ -33,6 +33,7 @@ export class ChartTable {
     public options:any = {
         scaleShowVerticalLines: true,
         responsive: true,
+        maintainAspectRatio: false,
         legend: { display: false }
     };
     public legend:boolean = false;

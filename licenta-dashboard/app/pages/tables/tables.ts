@@ -58,7 +58,6 @@ export class Tables {
         this.socket.on("new_order", function (data, args) {
             console.log(args);
             self.getOrders();
-
         });
     }
 
